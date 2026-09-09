@@ -1551,6 +1551,29 @@ strong {
     padding-top: 14px;
   }
 
+  .price thead {
+    display: none;
+  }
+
+  .price td {
+    display: block;
+    padding: 3px 0;
+  }
+
+  .price td:first-child {
+    padding-top: 12px;
+  }
+
+  .price td:last-child {
+    text-align: left;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  .price td:not(:last-child) {
+    border-bottom: 0;
+  }
+
   .register thead {
     display: none;
   }
