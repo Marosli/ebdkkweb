@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="sk">
+<!--
+    E.B.D. Kežmarok — environmentálna kancelária (od 1998)
+    Redesign 2026. Sémantické HTML, CSS custom properties, vanilla JS.
+    Typografia: IBM Plex Sans / IBM Plex Mono (Google Fonts).
+    Farebnosť výkresu: vyhláška ÚÚPV SR č. 153/2024 Z. z., príloha č. 2.
+    Fotografie: Wikimedia Commons (CC BY-SA), autori v popisoch a pätičke.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E.B.D. Kežmarok — územné plány obcí, EIA/SEA, regionálne koncepcie</title>
+  <meta name="description" content="Environmentálna kancelária E.B.D. Kežmarok, od roku 1998: obstarávanie územnoplánovacej dokumentácie podľa zákona č. 200/2022 Z. z., posudzovanie vplyvov EIA/SEA podľa zákona č. 24/2006 Z. z., regionálne koncepcie. Prešovský a Košický kraj.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:title" content="E.B.D. Kežmarok — územné plány obcí, EIA/SEA, regionálne koncepcie">
+  <meta property="og:description" content="Od roku 1998 obstarávame územné plány a spracúvame posudzovanie vplyvov na životné prostredie pre obce, mestá a investorov.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141414'/%3E%3Cpath d='M6 6h20v20H6z' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3Cpath d='M6 15h20M14 6v20' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M6 21c5-6 10 2 20-4' fill='none' stroke='%230082aa' stroke-width='2'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "E.B.D. Kežmarok",
+    "description": "Obstarávanie územnoplánovacej dokumentácie, posudzovanie vplyvov na životné prostredie (EIA/SEA), regionálne environmentálne koncepcie.",
+    "foundingDate": "1998",
+    "founder": { "@type": "Person", "name": "Ing. Jaroslav Lizák" },
+    "telephone": ["+421524525124", "+421903642470"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Starý trh 2", "postalCode": "060 01", "addressLocality": "Kežmarok", "addressCountry": "SK" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 49.1392, "longitude": 20.4302 },
+    "areaServed": ["Prešovský kraj", "Košický kraj", "Slovensko"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#s01" class="skip-to-content">Preskočiť na obsah</a>
+
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M19 14v6H4V5h6"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 32 32"><rect width="32" height="32" fill="#141414"/><path d="M6 6h20v20H6z" fill="none" stroke="#fff" stroke-width="1.5"/><path d="M6 15h20M14 6v20" stroke="#fff" stroke-width="1"/><path d="M6 21c5-6 10 2 20-4" fill="none" stroke="#0082aa" stroke-width="2"/></symbol>
+  </svg>
+
+  <nav class="nav" id="nav" aria-label="Hlavná navigácia">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span><span class="brand-name">E.B.D. Kežmarok</span><span class="brand-sub">Environmentálna kancelária · od 1998</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#s01"><b>01</b>Územné plánovanie</a></li>
+        <li><a href="#s02"><b>02</b>EIA / SEA</a></li>
+        <li><a href="#s03"><b>03</b>Regióny</a></li>
+        <li><a href="#s04"><b>04</b>Legislatíva</a></li>
+        <li><a href="#s05"><b>05</b>Referencie</a></li>
+        <li><a href="#s06"><b>06</b>Poradenstvo</a></li>
+        <li><a href="#s07"><b>07</b>Kancelária</a></li>
+      </ul>
+      <a href="#s06" class="btn js-mail" data-mail="konzultacia">Konzultácia</a>
+      <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Otvoriť menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="h1">
+      <div class="wrap">
+        <div class="hero-top">
+          <div>
+            <p class="eyebrow">Územné plánovanie · Posudzovanie vplyvov · Kežmarok, Spiš</p>
+            <h1 id="h1">Územné plány obcí a posudzovanie vplyvov na životné prostredie.</h1>
+          </div>
+          <div>
+            <p class="hero-lead">Od roku 1998 obstarávame územnoplánovaciu dokumentáciu podľa zákona č. 200/2022 Z. z. a spracúvame hodnotenia EIA a SEA podľa zákona č. 24/2006 Z. z. — pre obce, mestá, samosprávne kraje a investorov, predovšetkým v Prešovskom a Košickom kraji.</p>
+            <div class="hero-actions">
+              <a href="#s06" class="btn js-mail" data-mail="konzultacia"><span>Dohodnúť konzultáciu</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="#s05" class="btn btn--ghost">Register referencií</a>
+            </div>
+            <dl class="hero-keys">
+              <div><b class="num">1998</b><dt class="visually-hidden">Založenie</dt><dd>založenie kancelárie</dd></div>
+              <div><b class="num">7</b><dt class="visually-hidden">Územné plány</dt><dd>územných plánov</dd></div>
+              <div><b class="num">22</b><dt class="visually-hidden">EIA/SEA</dt><dd>posúdení EIA / SEA</dd></div>
+              <div><b class="num">4</b><dt class="visually-hidden">Regionálne koncepcie</dt><dd>regionálne koncepcie</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="sheet" aria-label="Ukážka regulačného výkresu">
+          <div class="sheet-body">
+            <div class="sheet-drawing">
+              <svg class="vykres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="vykres-title vykres-desc">
+<title id="vykres-title">Regulačný výkres územného plánu obce – schematická ukážka</title>
+<desc id="vykres-desc">Schéma regulačného výkresu podľa vyhlášky č. 153/2024 Z. z.: parcely, funkčné plochy v šedej škále, vodný tok, verejné priestory a hranice územia.</desc>
+<defs><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#287300" stroke-width="1"/></pattern></defs>
+<rect width="900" height="640" fill="#f7f7f5"/>
+<g class="l l-vrstevnice" fill="none" stroke="#c9c9c5" stroke-width="0.8">
+<path d="M0,40 C50,66 100,41 150,36 C200,57 250,44 300,40 C350,51 400,16 450,41 C500,35 550,66 600,55 C650,27 700,38 750,27 C800,36 850,58 900,54"/>
+<path d="M0,110 C50,109 100,100 150,99 C200,117 250,134 300,97 C350,126 400,83 450,99 C500,95 550,120 600,104 C650,102 700,117 750,96 C800,123 850,89 900,110" stroke-width="1.3"/>
+<path d="M0,180 C50,166 100,163 150,181 C200,176 250,173 300,177 C350,182 400,161 450,169 C500,187 550,188 600,181 C650,200 700,186 750,193 C800,165 850,193 900,191"/>
+<path d="M0,250 C50,273 100,240 150,243 C200,274 250,234 300,268 C350,272 400,230 450,241 C500,263 550,237 600,235 C650,269 700,246 750,260 C800,229 850,245 900,257"/>
+<path d="M0,320 C50,293 100,303 150,327 C200,343 250,346 300,306 C350,320 400,334 450,320 C500,330 550,303 600,305 C650,298 700,294 750,322 C800,321 850,324 900,307" stroke-width="1.3"/>
+<path d="M0,390 C50,372 100,373 150,402 C200,417 250,414 300,375 C350,365 400,415 450,389 C500,405 550,380 600,389 C650,391 700,386 750,394 C800,363 850,401 900,402"/>
+<path d="M0,460 C50,442 100,457 150,469 C200,455 250,443 300,448 C350,461 400,433 450,474 C500,477 550,471 600,473 C650,467 700,455 750,464 C800,460 850,487 900,471"/>
+<path d="M0,530 C50,516 100,553 150,539 C200,546 250,548 300,527 C350,552 400,551 450,537 C500,545 550,545 600,527 C650,542 700,506 750,524 C800,528 850,503 900,525" stroke-width="1.3"/>
+<path d="M0,600 C50,608 100,607 150,590 C200,625 250,609 300,594 C350,609 400,604 450,601 C500,594 550,628 600,605 C650,611 700,615 750,617 C800,573 850,606 900,609"/>
+</g>
+<g class="l l-plochy" stroke="none">
+<polygon points="0.0,0.0 73.6,0.0 73.5,55.7 0.0,29.6" fill="#82aa50"/>
+<polygon points="0.0,29.6 73.5,55.7 64.5,116.7 0.0,122.8" fill="#82aa50"/>
+<polygon points="0.0,122.8 64.5,116.7 49.6,195.2 0.0,201.0" fill="#aac88c"/>
+<polygon points="0.0,201.0 49.6,195.2 44.6,279.9 0.0,282.5" fill="#e6e6aa"/>
+<polygon points="0.0,282.5 44.6,279.9 54.9,347.0 0.0,337.2" fill="#e6e6aa"/>
+<polygon points="0.0,337.2 54.9,347.0 54.5,396.7 0.0,389.1" fill="#e6e6aa"/>
+<polygon points="0.0,389.1 54.5,396.7 68.9,415.6 0.0,429.4" fill="#e6e6aa"/>
+<polygon points="0.0,429.4 68.9,415.6 49.0,503.7 0.0,496.8" fill="#e6e6aa"/>
+<polygon points="0.0,496.8 49.0,503.7 57.1,549.5 0.0,536.5" fill="#e6e6aa"/>
+<polygon points="0.0,536.5 57.1,549.5 54.8,576.5 0.0,581.9" fill="#e6e6aa"/>
+<polygon points="0.0,581.9 54.8,576.5 62.1,640.0 0.0,640.0" fill="#e6e6aa"/>
+<polygon points="73.6,0.0 129.8,0.0 111.7,31.4 73.5,55.7" fill="#82aa50"/>
+<polygon points="73.5,55.7 111.7,31.4 114.0,143.4 64.5,116.7" fill="#82aa50"/>
+<polygon points="64.5,116.7 114.0,143.4 129.1,188.7 49.6,195.2" fill="#aac88c"/>
+<polygon points="49.6,195.2 129.1,188.7 110.9,256.8 44.6,279.9" fill="#e6e6aa"/>
+<polygon points="44.6,279.9 110.9,256.8 104.3,345.5 54.9,347.0" fill="#e6e6aa"/>
+<polygon points="54.9,347.0 104.3,345.5 108.5,387.1 54.5,396.7" fill="#e6e6aa"/>
+<polygon points="54.5,396.7 108.5,387.1 118.0,420.9 68.9,415.6" fill="#e6e6aa"/>
+<polygon points="68.9,415.6 118.0,420.9 128.2,481.8 49.0,503.7" fill="#e6e6aa"/>
+<polygon points="49.0,503.7 128.2,481.8 125.0,528.1 57.1,549.5" fill="#e6e6aa"/>
+<polygon points="57.1,549.5 125.0,528.1 117.1,580.2 54.8,576.5" fill="#e6e6aa"/>
+<polygon points="54.8,576.5 117.1,580.2 111.7,640.0 62.1,640.0" fill="#e6e6aa"/>
+<polygon points="129.8,0.0 211.2,0.0 205.4,38.4 111.7,31.4" fill="#82aa50"/>
+<polygon points="111.7,31.4 205.4,38.4 208.2,112.4 114.0,143.4" fill="#82aa50"/>
+<polygon points="114.0,143.4 208.2,112.4 191.2,216.7 129.1,188.7" fill="#e6e6aa"/>
+<polygon points="129.1,188.7 191.2,216.7 199.8,256.8 110.9,256.8" fill="#aac88c"/>
+<polygon points="110.9,256.8 199.8,256.8 211.8,328.1 104.3,345.5" fill="#e6e6aa"/>
+<polygon points="104.3,345.5 211.8,328.1 186.5,392.3 108.5,387.1" fill="#e6e6aa"/>
+<polygon points="108.5,387.1 186.5,392.3 188.9,423.8 118.0,420.9" fill="#e6e6aa"/>
+<polygon points="118.0,420.9 188.9,423.8 180.1,480.7 128.2,481.8" fill="#e6e6aa"/>
+<polygon points="128.2,481.8 180.1,480.7 197.7,531.2 125.0,528.1" fill="#e6e6aa"/>
+<polygon points="125.0,528.1 197.7,531.2 198.4,584.4 117.1,580.2" fill="#e6e6aa"/>
+<polygon points="117.1,580.2 198.4,584.4 193.2,640.0 111.7,640.0" fill="#e6e6aa"/>
+<polygon points="211.2,0.0 267.5,0.0 252.9,47.2 205.4,38.4" fill="#82aa50"/>
+<polygon points="205.4,38.4 252.9,47.2 264.7,111.2 208.2,112.4" fill="#82aa50"/>
+<polygon points="208.2,112.4 264.7,111.2 242.7,218.8 191.2,216.7" fill="#e6e6aa"/>
+<polygon points="191.2,216.7 242.7,218.8 263.2,262.0 199.8,256.8" fill="#aac88c"/>
+<polygon points="199.8,256.8 263.2,262.0 243.8,343.8 211.8,328.1" fill="#aac88c"/>
+<polygon points="211.8,328.1 243.8,343.8 267.0,378.4 186.5,392.3" fill="#e6e6aa"/>
+<polygon points="186.5,392.3 267.0,378.4 267.3,440.0 188.9,423.8" fill="#e6e6aa"/>
+<polygon points="188.9,423.8 267.3,440.0 256.6,490.0 180.1,480.7" fill="#e6e6aa"/>
+<polygon points="180.1,480.7 256.6,490.0 241.2,526.1 197.7,531.2" fill="#e6e6aa"/>
+<polygon points="197.7,531.2 241.2,526.1 267.6,580.9 198.4,584.4" fill="#e6e6aa"/>
+<polygon points="198.4,584.4 267.6,580.9 259.7,640.0 193.2,640.0" fill="#e6e6aa"/>
+<polygon points="267.5,0.0 305.6,0.0 323.7,47.9 252.9,47.2" fill="#e6e6aa"/>
+<polygon points="252.9,47.2 323.7,47.9 306.8,110.9 264.7,111.2" fill="#e6e6aa"/>
+<polygon points="264.7,111.2 306.8,110.9 320.4,186.8 242.7,218.8" fill="#e6e6aa"/>
+<polygon points="242.7,218.8 320.4,186.8 304.7,272.7 263.2,262.0" fill="#e6e6aa"/>
+<polygon points="263.2,262.0 304.7,272.7 324.7,340.1 243.8,343.8" fill="#aac88c"/>
+<polygon points="243.8,343.8 324.7,340.1 306.4,395.7 267.0,378.4" fill="#e6e6aa"/>
+<polygon points="267.0,378.4 306.4,395.7 303.9,416.0 267.3,440.0" fill="#e6e6aa"/>
+<polygon points="267.3,440.0 303.9,416.0 306.0,490.7 256.6,490.0" fill="#e6e6aa"/>
+<polygon points="256.6,490.0 306.0,490.7 299.4,529.5 241.2,526.1" fill="#e6e6aa"/>
+<polygon points="241.2,526.1 299.4,529.5 309.2,589.8 267.6,580.9" fill="#e6e6aa"/>
+<polygon points="267.6,580.9 309.2,589.8 301.6,640.0 259.7,640.0" fill="#e6e6aa"/>
+<polygon points="305.6,0.0 372.3,0.0 387.6,60.3 323.7,47.9" fill="#e6e6aa"/>
+<polygon points="323.7,47.9 387.6,60.3 380.8,132.2 306.8,110.9" fill="#e6e6aa"/>
+<polygon points="306.8,110.9 380.8,132.2 378.7,189.6 320.4,186.8" fill="#e6e6aa"/>
+<polygon points="320.4,186.8 378.7,189.6 362.8,253.9 304.7,272.7" fill="#e6e6aa"/>
+<polygon points="304.7,272.7 362.8,253.9 388.1,342.7 324.7,340.1" fill="#dcdcdc"/>
+<polygon points="324.7,340.1 388.1,342.7 389.7,374.1 306.4,395.7" fill="#dcdcdc"/>
+<polygon points="306.4,395.7 389.7,374.1 380.2,428.9 303.9,416.0" fill="#e6e6aa"/>
+<polygon points="303.9,416.0 380.2,428.9 382.9,487.1 306.0,490.7" fill="#e6e6aa"/>
+<polygon points="306.0,490.7 382.9,487.1 390.7,527.0 299.4,529.5" fill="#e6e6aa"/>
+<polygon points="299.4,529.5 390.7,527.0 377.6,594.2 309.2,589.8" fill="#e6e6aa"/>
+<polygon points="309.2,589.8 377.6,594.2 387.9,640.0 301.6,640.0" fill="#e6e6aa"/>
+<polygon points="372.3,0.0 431.4,0.0 430.5,54.2 387.6,60.3" fill="#e6e6aa"/>
+<polygon points="387.6,60.3 430.5,54.2 436.4,118.2 380.8,132.2" fill="#e6e6aa"/>
+<polygon points="380.8,132.2 436.4,118.2 429.9,218.5 378.7,189.6" fill="#e6e6aa"/>
+<polygon points="378.7,189.6 429.9,218.5 435.2,267.8 362.8,253.9" fill="#e6e6aa"/>
+<polygon points="362.8,253.9 435.2,267.8 432.9,347.5 388.1,342.7" fill="#dcdcdc"/>
+<polygon points="388.1,342.7 432.9,347.5 426.8,388.7 389.7,374.1" fill="#dcdcdc"/>
+<polygon points="389.7,374.1 426.8,388.7 421.4,431.7 380.2,428.9" fill="#dcdcdc"/>
+<polygon points="380.2,428.9 421.4,431.7 427.8,480.4 382.9,487.1" fill="#e6e6aa"/>
+<polygon points="382.9,487.1 427.8,480.4 428.7,549.9 390.7,527.0" fill="#e6e6aa"/>
+<polygon points="390.7,527.0 428.7,549.9 435.4,593.9 377.6,594.2" fill="#e6e6aa"/>
+<polygon points="377.6,594.2 435.4,593.9 421.6,640.0 387.9,640.0" fill="#e6e6aa"/>
+<polygon points="431.4,0.0 492.5,0.0 487.5,42.8 430.5,54.2" fill="#e6e6aa"/>
+<polygon points="430.5,54.2 487.5,42.8 495.8,107.2 436.4,118.2" fill="#e6e6aa"/>
+<polygon points="436.4,118.2 495.8,107.2 493.0,185.4 429.9,218.5" fill="#e6e6aa"/>
+<polygon points="429.9,218.5 493.0,185.4 488.2,270.0 435.2,267.8" fill="#dcdcdc"/>
+<polygon points="435.2,267.8 488.2,270.0 476.1,342.6 432.9,347.5" fill="#dccdb9"/>
+<polygon points="432.9,347.5 476.1,342.6 484.8,388.4 426.8,388.7" fill="#dcdcdc"/>
+<polygon points="426.8,388.7 484.8,388.4 498.5,422.7 421.4,431.7" fill="#dcdcdc"/>
+<polygon points="421.4,431.7 498.5,422.7 469.1,486.6 427.8,480.4" fill="#e6e6aa"/>
+<polygon points="427.8,480.4 469.1,486.6 490.7,530.2 428.7,549.9" fill="#e6e6aa"/>
+<polygon points="428.7,549.9 490.7,530.2 474.2,598.6 435.4,593.9" fill="#e6e6aa"/>
+<polygon points="435.4,593.9 474.2,598.6 490.1,640.0 421.6,640.0" fill="#e6e6aa"/>
+<polygon points="492.5,0.0 547.2,0.0 563.0,39.2 487.5,42.8" fill="#e6e6aa"/>
+<polygon points="487.5,42.8 563.0,39.2 555.1,111.9 495.8,107.2" fill="#e6e6aa"/>
+<polygon points="495.8,107.2 555.1,111.9 546.9,214.9 493.0,185.4" fill="#e6e6aa"/>
+<polygon points="493.0,185.4 546.9,214.9 563.8,283.8 488.2,270.0" fill="#dcdcdc"/>
+<polygon points="488.2,270.0 563.8,283.8 545.2,339.1 476.1,342.6" fill="#dcdcdc"/>
+<polygon points="476.1,342.6 545.2,339.1 542.9,376.9 484.8,388.4" fill="#dcdcdc"/>
+<polygon points="484.8,388.4 542.9,376.9 549.2,438.8 498.5,422.7" fill="#dcdcdc"/>
+<polygon points="498.5,422.7 549.2,438.8 561.5,498.1 469.1,486.6" fill="#e6e6aa"/>
+<polygon points="469.1,486.6 561.5,498.1 565.0,532.0 490.7,530.2" fill="#e6e6aa"/>
+<polygon points="490.7,530.2 565.0,532.0 537.7,586.5 474.2,598.6" fill="#e6e6aa"/>
+<polygon points="474.2,598.6 537.7,586.5 541.4,640.0 490.1,640.0" fill="#e6e6aa"/>
+<polygon points="547.2,0.0 610.9,0.0 616.9,48.8 563.0,39.2" fill="#e6e6aa"/>
+<polygon points="563.0,39.2 616.9,48.8 619.3,116.7 555.1,111.9" fill="#e6e6aa"/>
+<polygon points="555.1,111.9 619.3,116.7 629.7,221.6 546.9,214.9" fill="#e6e6aa"/>
+<polygon points="546.9,214.9 629.7,221.6 618.1,255.9 563.8,283.8" fill="#e6e6aa"/>
+<polygon points="563.8,283.8 618.1,255.9 605.5,347.8 545.2,339.1" fill="#dcdcdc"/>
+<polygon points="545.2,339.1 605.5,347.8 605.8,390.7 542.9,376.9" fill="#dcdcdc"/>
+<polygon points="542.9,376.9 605.8,390.7 621.6,424.1 549.2,438.8" fill="#e6e6aa"/>
+<polygon points="549.2,438.8 621.6,424.1 628.3,478.7 561.5,498.1" fill="#82aa50"/>
+<polygon points="561.5,498.1 628.3,478.7 608.6,536.5 565.0,532.0" fill="#e6e6aa"/>
+<polygon points="565.0,532.0 608.6,536.5 605.3,596.6 537.7,586.5" fill="#e6e6aa"/>
+<polygon points="537.7,586.5 605.3,596.6 611.6,640.0 541.4,640.0" fill="#e6e6aa"/>
+<polygon points="610.9,0.0 655.6,0.0 653.2,48.9 616.9,48.8" fill="#e6e6aa"/>
+<polygon points="616.9,48.8 653.2,48.9 663.4,129.7 619.3,116.7" fill="#e6e6aa"/>
+<polygon points="619.3,116.7 663.4,129.7 668.7,214.9 629.7,221.6" fill="#e6e6aa"/>
+<polygon points="629.7,221.6 668.7,214.9 676.4,277.1 618.1,255.9" fill="#e6e6aa"/>
+<polygon points="618.1,255.9 676.4,277.1 657.1,335.9 605.5,347.8" fill="#e6e6aa"/>
+<polygon points="605.5,347.8 657.1,335.9 656.5,373.9 605.8,390.7" fill="#e6e6aa"/>
+<polygon points="605.8,390.7 656.5,373.9 664.0,435.4 621.6,424.1" fill="#e6e6aa"/>
+<polygon points="621.6,424.1 664.0,435.4 656.6,485.8 628.3,478.7" fill="#82aa50"/>
+<polygon points="628.3,478.7 656.6,485.8 660.8,542.5 608.6,536.5" fill="#e6e6aa"/>
+<polygon points="608.6,536.5 660.8,542.5 665.2,590.9 605.3,596.6" fill="#e6e6aa"/>
+<polygon points="605.3,596.6 665.2,590.9 671.2,640.0 611.6,640.0" fill="#e6e6aa"/>
+<polygon points="655.6,0.0 714.7,0.0 724.8,57.9 653.2,48.9" fill="#e6e6aa"/>
+<polygon points="653.2,48.9 724.8,57.9 706.9,142.1 663.4,129.7" fill="#e6e6aa"/>
+<polygon points="663.4,129.7 706.9,142.1 723.1,189.2 668.7,214.9" fill="#e6e6aa"/>
+<polygon points="668.7,214.9 723.1,189.2 716.2,275.0 676.4,277.1" fill="#e6e6aa"/>
+<polygon points="676.4,277.1 716.2,275.0 727.8,333.0 657.1,335.9" fill="#e6e6aa"/>
+<polygon points="657.1,335.9 727.8,333.0 719.2,394.8 656.5,373.9" fill="#e6e6aa"/>
+<polygon points="656.5,373.9 719.2,394.8 725.0,441.7 664.0,435.4" fill="#e6e6aa"/>
+<polygon points="664.0,435.4 725.0,441.7 716.5,496.5 656.6,485.8" fill="#8c8c8c"/>
+<polygon points="656.6,485.8 716.5,496.5 709.9,543.1 660.8,542.5" fill="#e6e6aa"/>
+<polygon points="660.8,542.5 709.9,543.1 725.5,591.6 665.2,590.9" fill="#646464"/>
+<polygon points="665.2,590.9 725.5,591.6 722.9,640.0 671.2,640.0" fill="#e6e6aa"/>
+<polygon points="714.7,0.0 753.8,0.0 774.5,60.3 724.8,57.9" fill="#e6e6aa"/>
+<polygon points="724.8,57.9 774.5,60.3 776.9,125.8 706.9,142.1" fill="#e6e6aa"/>
+<polygon points="706.9,142.1 776.9,125.8 771.2,196.4 723.1,189.2" fill="#e6e6aa"/>
+<polygon points="723.1,189.2 771.2,196.4 774.8,283.0 716.2,275.0" fill="#e6e6aa"/>
+<polygon points="716.2,275.0 774.8,283.0 757.9,324.2 727.8,333.0" fill="#e6e6aa"/>
+<polygon points="727.8,333.0 757.9,324.2 760.7,386.9 719.2,394.8" fill="#e6e6aa"/>
+<polygon points="719.2,394.8 760.7,386.9 770.6,429.1 725.0,441.7" fill="#e6e6aa"/>
+<polygon points="725.0,441.7 770.6,429.1 748.3,500.9 716.5,496.5" fill="#646464"/>
+<polygon points="716.5,496.5 748.3,500.9 749.3,545.1 709.9,543.1" fill="#646464"/>
+<polygon points="709.9,543.1 749.3,545.1 752.6,583.4 725.5,591.6" fill="#646464"/>
+<polygon points="725.5,591.6 752.6,583.4 771.2,640.0 722.9,640.0" fill="#e6e6aa"/>
+<polygon points="753.8,0.0 820.5,0.0 820.8,45.3 774.5,60.3" fill="#e6e6aa"/>
+<polygon points="774.5,60.3 820.8,45.3 841.3,138.3 776.9,125.8" fill="#e6e6aa"/>
+<polygon points="776.9,125.8 841.3,138.3 840.1,220.2 771.2,196.4" fill="#e6e6aa"/>
+<polygon points="771.2,196.4 840.1,220.2 833.1,286.2 774.8,283.0" fill="#e6e6aa"/>
+<polygon points="774.8,283.0 833.1,286.2 818.5,328.3 757.9,324.2" fill="#e6e6aa"/>
+<polygon points="757.9,324.2 818.5,328.3 834.3,380.6 760.7,386.9" fill="#e6e6aa"/>
+<polygon points="760.7,386.9 834.3,380.6 841.5,433.3 770.6,429.1" fill="#e6e6aa"/>
+<polygon points="770.6,429.1 841.5,433.3 834.1,501.9 748.3,500.9" fill="#646464"/>
+<polygon points="748.3,500.9 834.1,501.9 835.5,532.9 749.3,545.1" fill="#646464"/>
+<polygon points="749.3,545.1 835.5,532.9 829.1,597.0 752.6,583.4" fill="#646464"/>
+<polygon points="752.6,583.4 829.1,597.0 847.6,640.0 771.2,640.0" fill="#e6e6aa"/>
+<polygon points="820.5,0.0 900.0,0.0 900.0,35.3 820.8,45.3" fill="#e6e6aa"/>
+<polygon points="820.8,45.3 900.0,35.3 900.0,138.8 841.3,138.3" fill="#e6e6aa"/>
+<polygon points="841.3,138.3 900.0,138.8 900.0,221.1 840.1,220.2" fill="#e6e6aa"/>
+<polygon points="840.1,220.2 900.0,221.1 900.0,271.5 833.1,286.2" fill="#e6e6aa"/>
+<polygon points="833.1,286.2 900.0,271.5 900.0,338.8 818.5,328.3" fill="#e6e6aa"/>
+<polygon points="818.5,328.3 900.0,338.8 900.0,378.5 834.3,380.6" fill="#e6e6aa"/>
+<polygon points="834.3,380.6 900.0,378.5 900.0,430.4 841.5,433.3" fill="#e6e6aa"/>
+<polygon points="841.5,433.3 900.0,430.4 900.0,492.3 834.1,501.9" fill="#646464"/>
+<polygon points="834.1,501.9 900.0,492.3 900.0,540.2 835.5,532.9" fill="#646464"/>
+<polygon points="835.5,532.9 900.0,540.2 900.0,575.3 829.1,597.0" fill="#bebebe"/>
+<polygon points="829.1,597.0 900.0,575.3 900.0,640.0 847.6,640.0" fill="#e6e6aa"/>
+</g>
+<g class="l l-parcely" fill="none" stroke="#a9a9a6" stroke-width="0.6">
+<polygon points="0.0,0.0 73.6,0.0 73.5,55.7 0.0,29.6"/>
+<polygon points="0.0,29.6 73.5,55.7 64.5,116.7 0.0,122.8"/>
+<polygon points="0.0,122.8 64.5,116.7 49.6,195.2 0.0,201.0"/>
+<polygon points="0.0,201.0 49.6,195.2 44.6,279.9 0.0,282.5"/>
+<polygon points="0.0,282.5 44.6,279.9 54.9,347.0 0.0,337.2"/>
+<polygon points="0.0,337.2 54.9,347.0 54.5,396.7 0.0,389.1"/>
+<polygon points="0.0,389.1 54.5,396.7 68.9,415.6 0.0,429.4"/>
+<polygon points="0.0,429.4 68.9,415.6 49.0,503.7 0.0,496.8"/>
+<polygon points="0.0,496.8 49.0,503.7 57.1,549.5 0.0,536.5"/>
+<polygon points="0.0,536.5 57.1,549.5 54.8,576.5 0.0,581.9"/>
+<polygon points="0.0,581.9 54.8,576.5 62.1,640.0 0.0,640.0"/>
+<polygon points="73.6,0.0 129.8,0.0 111.7,31.4 73.5,55.7"/>
+<polygon points="73.5,55.7 111.7,31.4 114.0,143.4 64.5,116.7"/>
+<polygon points="64.5,116.7 114.0,143.4 129.1,188.7 49.6,195.2"/>
+<polygon points="49.6,195.2 129.1,188.7 110.9,256.8 44.6,279.9"/>
+<polygon points="44.6,279.9 110.9,256.8 104.3,345.5 54.9,347.0"/>
+<polygon points="54.9,347.0 104.3,345.5 108.5,387.1 54.5,396.7"/>
+<polygon points="54.5,396.7 108.5,387.1 118.0,420.9 68.9,415.6"/>
+<polygon points="68.9,415.6 118.0,420.9 128.2,481.8 49.0,503.7"/>
+<polygon points="49.0,503.7 128.2,481.8 125.0,528.1 57.1,549.5"/>
+<polygon points="57.1,549.5 125.0,528.1 117.1,580.2 54.8,576.5"/>
+<polygon points="54.8,576.5 117.1,580.2 111.7,640.0 62.1,640.0"/>
+<polygon points="129.8,0.0 211.2,0.0 205.4,38.4 111.7,31.4"/>
+<polygon points="111.7,31.4 205.4,38.4 208.2,112.4 114.0,143.4"/>
+<polygon points="114.0,143.4 208.2,112.4 191.2,216.7 129.1,188.7"/>
+<polygon points="129.1,188.7 191.2,216.7 199.8,256.8 110.9,256.8"/>
+<polygon points="110.9,256.8 199.8,256.8 211.8,328.1 104.3,345.5"/>
+<polygon points="104.3,345.5 211.8,328.1 186.5,392.3 108.5,387.1"/>
+<polygon points="108.5,387.1 186.5,392.3 188.9,423.8 118.0,420.9"/>
+<polygon points="118.0,420.9 188.9,423.8 180.1,480.7 128.2,481.8"/>
+<polygon points="128.2,481.8 180.1,480.7 197.7,531.2 125.0,528.1"/>
+<polygon points="125.0,528.1 197.7,531.2 198.4,584.4 117.1,580.2"/>
+<polygon points="117.1,580.2 198.4,584.4 193.2,640.0 111.7,640.0"/>
+<polygon points="211.2,0.0 267.5,0.0 252.9,47.2 205.4,38.4"/>
+<polygon points="205.4,38.4 252.9,47.2 264.7,111.2 208.2,112.4"/>
+<polygon points="208.2,112.4 264.7,111.2 242.7,218.8 191.2,216.7"/>
+<polygon points="191.2,216.7 242.7,218.8 263.2,262.0 199.8,256.8"/>
+<polygon points="199.8,256.8 263.2,262.0 243.8,343.8 211.8,328.1"/>
+<polygon points="211.8,328.1 243.8,343.8 267.0,378.4 186.5,392.3"/>
+<polygon points="186.5,392.3 267.0,378.4 267.3,440.0 188.9,423.8"/>
+<polygon points="188.9,423.8 267.3,440.0 256.6,490.0 180.1,480.7"/>
+<polygon points="180.1,480.7 256.6,490.0 241.2,526.1 197.7,531.2"/>
+<polygon points="197.7,531.2 241.2,526.1 267.6,580.9 198.4,584.4"/>
+<polygon points="198.4,584.4 267.6,580.9 259.7,640.0 193.2,640.0"/>
+<polygon points="267.5,0.0 305.6,0.0 323.7,47.9 252.9,47.2"/>
+<polygon points="252.9,47.2 323.7,47.9 306.8,110.9 264.7,111.2"/>
+<polygon points="264.7,111.2 306.8,110.9 320.4,186.8 242.7,218.8"/>
+<polygon points="242.7,218.8 320.4,186.8 304.7,272.7 263.2,262.0"/>
+<polygon points="263.2,262.0 304.7,272.7 324.7,340.1 243.8,343.8"/>
+<polygon points="243.8,343.8 324.7,340.1 306.4,395.7 267.0,378.4"/>
+<polygon points="267.0,378.4 306.4,395.7 303.9,416.0 267.3,440.0"/>
+<polygon points="267.3,440.0 303.9,416.0 306.0,490.7 256.6,490.0"/>
+<polygon points="256.6,490.0 306.0,490.7 299.4,529.5 241.2,526.1"/>
+<polygon points="241.2,526.1 299.4,529.5 309.2,589.8 267.6,580.9"/>
+<polygon points="267.6,580.9 309.2,589.8 301.6,640.0 259.7,640.0"/>
+<polygon points="305.6,0.0 372.3,0.0 387.6,60.3 323.7,47.9"/>
+<polygon points="323.7,47.9 387.6,60.3 380.8,132.2 306.8,110.9"/>
+<polygon points="306.8,110.9 380.8,132.2 378.7,189.6 320.4,186.8"/>
+<polygon points="320.4,186.8 378.7,189.6 362.8,253.9 304.7,272.7"/>
+<polygon points="304.7,272.7 362.8,253.9 388.1,342.7 324.7,340.1" stroke="#8f8f8c"/>
+<line x1="332.1" y1="263.9" x2="354.5" y2="341.3"/>
+<polygon points="324.7,340.1 388.1,342.7 389.7,374.1 306.4,395.7" stroke="#8f8f8c"/>
+<line x1="350.6" y1="341.1" x2="340.4" y2="386.9"/>
+<polygon points="306.4,395.7 389.7,374.1 380.2,428.9 303.9,416.0"/>
+<polygon points="303.9,416.0 380.2,428.9 382.9,487.1 306.0,490.7"/>
+<polygon points="306.0,490.7 382.9,487.1 390.7,527.0 299.4,529.5"/>
+<polygon points="299.4,529.5 390.7,527.0 377.6,594.2 309.2,589.8"/>
+<polygon points="309.2,589.8 377.6,594.2 387.9,640.0 301.6,640.0"/>
+<polygon points="372.3,0.0 431.4,0.0 430.5,54.2 387.6,60.3"/>
+<polygon points="387.6,60.3 430.5,54.2 436.4,118.2 380.8,132.2"/>
+<polygon points="380.8,132.2 436.4,118.2 429.9,218.5 378.7,189.6"/>
+<polygon points="378.7,189.6 429.9,218.5 435.2,267.8 362.8,253.9"/>
+<polygon points="362.8,253.9 435.2,267.8 432.9,347.5 388.1,342.7" stroke="#8f8f8c"/>
+<line x1="390.3" y1="259.2" x2="405.1" y2="344.5"/>
+<polygon points="388.1,342.7 432.9,347.5 426.8,388.7 389.7,374.1" stroke="#8f8f8c"/>
+<line x1="416.0" y1="345.7" x2="412.7" y2="383.2"/>
+<polygon points="389.7,374.1 426.8,388.7 421.4,431.7 380.2,428.9" stroke="#8f8f8c"/>
+<line x1="408.3" y1="381.4" x2="400.9" y2="430.3"/>
+<polygon points="380.2,428.9 421.4,431.7 427.8,480.4 382.9,487.1"/>
+<polygon points="382.9,487.1 427.8,480.4 428.7,549.9 390.7,527.0"/>
+<polygon points="390.7,527.0 428.7,549.9 435.4,593.9 377.6,594.2"/>
+<polygon points="377.6,594.2 435.4,593.9 421.6,640.0 387.9,640.0"/>
+<polygon points="431.4,0.0 492.5,0.0 487.5,42.8 430.5,54.2"/>
+<polygon points="430.5,54.2 487.5,42.8 495.8,107.2 436.4,118.2"/>
+<polygon points="436.4,118.2 495.8,107.2 493.0,185.4 429.9,218.5"/>
+<polygon points="429.9,218.5 493.0,185.4 488.2,270.0 435.2,267.8" stroke="#8f8f8c"/>
+<polygon points="435.2,267.8 488.2,270.0 476.1,342.6 432.9,347.5" stroke="#8f8f8c"/>
+<polygon points="432.9,347.5 476.1,342.6 484.8,388.4 426.8,388.7" stroke="#8f8f8c"/>
+<line x1="461.0" y1="344.3" x2="464.4" y2="388.5"/>
+<polygon points="426.8,388.7 484.8,388.4 498.5,422.7 421.4,431.7" stroke="#8f8f8c"/>
+<line x1="461.2" y1="388.5" x2="467.1" y2="426.4"/>
+<polygon points="421.4,431.7 498.5,422.7 469.1,486.6 427.8,480.4"/>
+<polygon points="427.8,480.4 469.1,486.6 490.7,530.2 428.7,549.9"/>
+<polygon points="428.7,549.9 490.7,530.2 474.2,598.6 435.4,593.9"/>
+<polygon points="435.4,593.9 474.2,598.6 490.1,640.0 421.6,640.0"/>
+<polygon points="492.5,0.0 547.2,0.0 563.0,39.2 487.5,42.8"/>
+<polygon points="487.5,42.8 563.0,39.2 555.1,111.9 495.8,107.2"/>
+<polygon points="495.8,107.2 555.1,111.9 546.9,214.9 493.0,185.4"/>
+<polygon points="493.0,185.4 546.9,214.9 563.8,283.8 488.2,270.0" stroke="#8f8f8c"/>
+<line x1="521.5" y1="201.0" x2="528.2" y2="277.3"/>
+<polygon points="488.2,270.0 563.8,283.8 545.2,339.1 476.1,342.6" stroke="#8f8f8c"/>
+<polygon points="476.1,342.6 545.2,339.1 542.9,376.9 484.8,388.4" stroke="#8f8f8c"/>
+<line x1="519.6" y1="340.4" x2="521.3" y2="381.2"/>
+<polygon points="484.8,388.4 542.9,376.9 549.2,438.8 498.5,422.7" stroke="#8f8f8c"/>
+<line x1="513.3" y1="382.8" x2="523.4" y2="430.6"/>
+<polygon points="498.5,422.7 549.2,438.8 561.5,498.1 469.1,486.6"/>
+<polygon points="469.1,486.6 561.5,498.1 565.0,532.0 490.7,530.2"/>
+<polygon points="490.7,530.2 565.0,532.0 537.7,586.5 474.2,598.6"/>
+<polygon points="474.2,598.6 537.7,586.5 541.4,640.0 490.1,640.0"/>
+<polygon points="547.2,0.0 610.9,0.0 616.9,48.8 563.0,39.2"/>
+<polygon points="563.0,39.2 616.9,48.8 619.3,116.7 555.1,111.9"/>
+<polygon points="555.1,111.9 619.3,116.7 629.7,221.6 546.9,214.9"/>
+<polygon points="546.9,214.9 629.7,221.6 618.1,255.9 563.8,283.8"/>
+<polygon points="563.8,283.8 618.1,255.9 605.5,347.8 545.2,339.1" stroke="#8f8f8c"/>
+<line x1="590.9" y1="269.9" x2="575.3" y2="343.5"/>
+<polygon points="545.2,339.1 605.5,347.8 605.8,390.7 542.9,376.9" stroke="#8f8f8c"/>
+<line x1="567.4" y1="342.3" x2="566.0" y2="382.0"/>
+<polygon points="542.9,376.9 605.8,390.7 621.6,424.1 549.2,438.8"/>
+<polygon points="549.2,438.8 621.6,424.1 628.3,478.7 561.5,498.1"/>
+<polygon points="561.5,498.1 628.3,478.7 608.6,536.5 565.0,532.0"/>
+<polygon points="565.0,532.0 608.6,536.5 605.3,596.6 537.7,586.5"/>
+<polygon points="537.7,586.5 605.3,596.6 611.6,640.0 541.4,640.0"/>
+<polygon points="610.9,0.0 655.6,0.0 653.2,48.9 616.9,48.8"/>
+<polygon points="616.9,48.8 653.2,48.9 663.4,129.7 619.3,116.7"/>
+<polygon points="619.3,116.7 663.4,129.7 668.7,214.9 629.7,221.6"/>
+<polygon points="629.7,221.6 668.7,214.9 676.4,277.1 618.1,255.9"/>
+<polygon points="618.1,255.9 676.4,277.1 657.1,335.9 605.5,347.8"/>
+<polygon points="605.5,347.8 657.1,335.9 656.5,373.9 605.8,390.7"/>
+<polygon points="605.8,390.7 656.5,373.9 664.0,435.4 621.6,424.1"/>
+<polygon points="621.6,424.1 664.0,435.4 656.6,485.8 628.3,478.7"/>
+<polygon points="628.3,478.7 656.6,485.8 660.8,542.5 608.6,536.5"/>
+<polygon points="608.6,536.5 660.8,542.5 665.2,590.9 605.3,596.6"/>
+<polygon points="605.3,596.6 665.2,590.9 671.2,640.0 611.6,640.0"/>
+<polygon points="655.6,0.0 714.7,0.0 724.8,57.9 653.2,48.9"/>
+<polygon points="653.2,48.9 724.8,57.9 706.9,142.1 663.4,129.7"/>
+<polygon points="663.4,129.7 706.9,142.1 723.1,189.2 668.7,214.9"/>
+<polygon points="668.7,214.9 723.1,189.2 716.2,275.0 676.4,277.1"/>
+<polygon points="676.4,277.1 716.2,275.0 727.8,333.0 657.1,335.9"/>
+<polygon points="657.1,335.9 727.8,333.0 719.2,394.8 656.5,373.9"/>
+<polygon points="656.5,373.9 719.2,394.8 725.0,441.7 664.0,435.4"/>
+<polygon points="664.0,435.4 725.0,441.7 716.5,496.5 656.6,485.8"/>
+<polygon points="656.6,485.8 716.5,496.5 709.9,543.1 660.8,542.5"/>
+<polygon points="660.8,542.5 709.9,543.1 725.5,591.6 665.2,590.9"/>
+<polygon points="665.2,590.9 725.5,591.6 722.9,640.0 671.2,640.0"/>
+<polygon points="714.7,0.0 753.8,0.0 774.5,60.3 724.8,57.9"/>
+<polygon points="724.8,57.9 774.5,60.3 776.9,125.8 706.9,142.1"/>
+<polygon points="706.9,142.1 776.9,125.8 771.2,196.4 723.1,189.2"/>
+<polygon points="723.1,189.2 771.2,196.4 774.8,283.0 716.2,275.0"/>
+<polygon points="716.2,275.0 774.8,283.0 757.9,324.2 727.8,333.0"/>
+<polygon points="727.8,333.0 757.9,324.2 760.7,386.9 719.2,394.8"/>
+<polygon points="719.2,394.8 760.7,386.9 770.6,429.1 725.0,441.7"/>
+<polygon points="725.0,441.7 770.6,429.1 748.3,500.9 716.5,496.5"/>
+<polygon points="716.5,496.5 748.3,500.9 749.3,545.1 709.9,543.1"/>
+<polygon points="709.9,543.1 749.3,545.1 752.6,583.4 725.5,591.6"/>
+<polygon points="725.5,591.6 752.6,583.4 771.2,640.0 722.9,640.0"/>
+<polygon points="753.8,0.0 820.5,0.0 820.8,45.3 774.5,60.3"/>
+<polygon points="774.5,60.3 820.8,45.3 841.3,138.3 776.9,125.8"/>
+<polygon points="776.9,125.8 841.3,138.3 840.1,220.2 771.2,196.4"/>
+<polygon points="771.2,196.4 840.1,220.2 833.1,286.2 774.8,283.0"/>
+<polygon points="774.8,283.0 833.1,286.2 818.5,328.3 757.9,324.2"/>
+<polygon points="757.9,324.2 818.5,328.3 834.3,380.6 760.7,386.9"/>
+<polygon points="760.7,386.9 834.3,380.6 841.5,433.3 770.6,429.1"/>
+<polygon points="770.6,429.1 841.5,433.3 834.1,501.9 748.3,500.9"/>
+<polygon points="748.3,500.9 834.1,501.9 835.5,532.9 749.3,545.1"/>
+<polygon points="749.3,545.1 835.5,532.9 829.1,597.0 752.6,583.4"/>
+<polygon points="752.6,583.4 829.1,597.0 847.6,640.0 771.2,640.0"/>
+<polygon points="820.5,0.0 900.0,0.0 900.0,35.3 820.8,45.3"/>
+<polygon points="820.8,45.3 900.0,35.3 900.0,138.8 841.3,138.3"/>
+<polygon points="841.3,138.3 900.0,138.8 900.0,221.1 840.1,220.2"/>
+<polygon points="840.1,220.2 900.0,221.1 900.0,271.5 833.1,286.2"/>
+<polygon points="833.1,286.2 900.0,271.5 900.0,338.8 818.5,328.3"/>
+<polygon points="818.5,328.3 900.0,338.8 900.0,378.5 834.3,380.6"/>
+<polygon points="834.3,380.6 900.0,378.5 900.0,430.4 841.5,433.3"/>
+<polygon points="841.5,433.3 900.0,430.4 900.0,492.3 834.1,501.9"/>
+<polygon points="834.1,501.9 900.0,492.3 900.0,540.2 835.5,532.9"/>
+<polygon points="835.5,532.9 900.0,540.2 900.0,575.3 829.1,597.0"/>
+<polygon points="829.1,597.0 900.0,575.3 900.0,640.0 847.6,640.0"/>
+</g>
+<g class="l l-voda" fill="none">
+<path d="M0,150 C260,240 420,480 900,470" stroke="url(#hatch)" stroke-width="30" opacity="0.9"/>
+<path d="M0,150 C260,240 420,480 900,470" stroke="#f7f7f5" stroke-width="7"/>
+<path d="M0,150 C260,240 420,480 900,470" stroke="#00aff0" stroke-width="3"/>
+</g>
+<g class="l l-regulativy" fill="none" stroke="#0082aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0,340 C150,310 300,360 470,330 S760,290 900,320"/>
+<path d="M470,330 C490,420 540,530 530,640"/>
+<path d="M620,318 C700,370 730,450 770,520"/>
+<path d="M470,330 C380,270 310,210 260,0"/>
+<circle cx="470" cy="330" r="7" fill="#fff"/>
+<text x="481" y="321" fill="#0082aa" stroke="none" font-size="10.5" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="500">T-1</text>
+<circle cx="620" cy="318" r="7" fill="#fff"/>
+<text x="631" y="309" fill="#0082aa" stroke="none" font-size="10.5" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="500">T-2</text>
+<circle cx="770" cy="520" r="7" fill="#fff"/>
+<text x="781" y="511" fill="#0082aa" stroke="none" font-size="10.5" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="500">T-3</text>
+<polygon points="435.2,267.8 488.2,270.0 476.1,342.6 432.9,347.5" stroke="#e69600" stroke-width="2.2"/>
+</g>
+<g class="l l-hranice" fill="none">
+<polygon class="dash" points="304.7,272.7 493.0,185.4 546.9,214.9 618.1,255.9 605.8,390.7 549.2,438.8 421.4,431.7 380.2,428.9 306.4,395.7" stroke="#828282" stroke-width="1.6" stroke-dasharray="7 3"/>
+<polygon class="dash" points="656.6,485.8 664.0,435.4 770.6,429.1 900.0,430.4 900.0,575.3 829.1,597.0 665.2,590.9 660.8,542.5" stroke="#828282" stroke-width="1.6" stroke-dasharray="7 3"/>
+<polygon points="886.4,320.0 870.6,346.0 867.1,372.0 871.1,399.8 871.2,428.4 862.4,456.0 849.0,482.9 835.4,510.9 818.8,538.9 792.6,562.3 755.8,577.7 715.1,587.7 678.0,599.2 644.7,615.3 609.5,629.9 568.8,633.5 525.5,623.0 485.3,605.7 450.0,592.6 416.8,588.1 383.0,588.7 348.0,589.3 310.9,590.2 269.3,594.0 222.1,599.2 174.6,598.2 136.4,584.3 112.4,558.8 96.4,529.8 77.1,504.6 50.3,483.2 23.5,460.7 7.2,434.0 3.7,404.6 5.1,375.5 4.4,347.6 3.5,320.0 9.5,292.7 23.2,266.8 36.5,241.6 42.0,215.0 43.8,186.0 54.8,158.6 84.0,138.8 126.5,128.0 168.4,120.8 200.2,109.4 223.5,91.3 245.9,70.1 271.8,49.7 300.5,29.6 331.4,7.0 366.2,-15.9 406.6,-31.0 450.0,-31.8 492.2,-20.8 531.8,-8.1 571.6,-0.9 612.7,3.8 651.1,15.0 680.7,37.5 700.7,66.8 717.3,94.7 736.7,117.3 758.5,136.9 779.1,157.0 798.6,177.7 823.1,196.9 856.1,215.5 889.5,236.7 908.4,262.8 904.7,291.9" stroke="#e6bfff" stroke-width="3" stroke-dasharray="10 3 2 3"/>
+<polygon points="886.4,320.0 870.6,346.0 867.1,372.0 871.1,399.8 871.2,428.4 862.4,456.0 849.0,482.9 835.4,510.9 818.8,538.9 792.6,562.3 755.8,577.7 715.1,587.7 678.0,599.2 644.7,615.3 609.5,629.9 568.8,633.5 525.5,623.0 485.3,605.7 450.0,592.6 416.8,588.1 383.0,588.7 348.0,589.3 310.9,590.2 269.3,594.0 222.1,599.2 174.6,598.2 136.4,584.3 112.4,558.8 96.4,529.8 77.1,504.6 50.3,483.2 23.5,460.7 7.2,434.0 3.7,404.6 5.1,375.5 4.4,347.6 3.5,320.0 9.5,292.7 23.2,266.8 36.5,241.6 42.0,215.0 43.8,186.0 54.8,158.6 84.0,138.8 126.5,128.0 168.4,120.8 200.2,109.4 223.5,91.3 245.9,70.1 271.8,49.7 300.5,29.6 331.4,7.0 366.2,-15.9 406.6,-31.0 450.0,-31.8 492.2,-20.8 531.8,-8.1 571.6,-0.9 612.7,3.8 651.1,15.0 680.7,37.5 700.7,66.8 717.3,94.7 736.7,117.3 758.5,136.9 779.1,157.0 798.6,177.7 823.1,196.9 856.1,215.5 889.5,236.7 908.4,262.8 904.7,291.9" stroke="#a37ac2" stroke-width="0.6"/>
+</g>
+<g class="l l-popisy" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" stroke="none">
+<text x="400" y="275" fill="#4b0073" font-size="15" font-weight="600">1/</text>
+<text x="530" y="400" fill="#4b0073" font-size="15" font-weight="600">2</text>
+<text x="760" y="470" fill="#4b0073" font-size="15" font-weight="600">5/_/</text>
+<text x="140" y="60" fill="#4b0073" font-size="15" font-weight="600">7</text>
+<text x="760" y="140" fill="#4b0073" font-size="15" font-weight="600">6</text>
+<text x="150" y="520" fill="#4b0073" font-size="15" font-weight="600">4/</text>
+<text x="391" y="461" fill="#9a9a97" font-size="7.5">3179/5</text>
+<text x="780" y="30" fill="#9a9a97" font-size="7.5">2361/5</text>
+<text x="19" y="412" fill="#9a9a97" font-size="7.5">1257/4</text>
+<text x="790" y="411" fill="#9a9a97" font-size="7.5">1375/3</text>
+<text x="573" y="26" fill="#9a9a97" font-size="7.5">1416/6</text>
+<text x="576" y="170" fill="#9a9a97" font-size="7.5">1405/6</text>
+<text x="79" y="460" fill="#9a9a97" font-size="7.5">4466/4</text>
+<text x="562" y="620" fill="#9a9a97" font-size="7.5">4145/8</text>
+<text x="332" y="564" fill="#9a9a97" font-size="7.5">4294/4</text>
+<text x="85" y="26" fill="#9a9a97" font-size="7.5">3343/2</text>
+<text x="623" y="571" fill="#9a9a97" font-size="7.5">1791/4</text>
+<text x="848" y="24" fill="#9a9a97" font-size="7.5">4093/2</text>
+<text x="79" y="91" fill="#9a9a97" font-size="7.5">3756/7</text>
+</g>
+</svg>
+              <svg class="north" viewBox="0 0 34 46" aria-hidden="true"><path d="M17 2v42M17 2l-6 14 6-4 6 4z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M11 16l6-4 6 4-6-14z" fill="currentColor"/><text x="17" y="44" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="currentColor">S</text></svg>
+              <div class="scale"><div class="scale-bar"><span></span><span></span><span></span><span></span></div><span>0 · 100 · 200 m</span></div>
+            </div>
+            <aside class="legend" aria-label="Legenda a navigácia">
+              <h2>Legenda · vyberte službu</h2>
+              <ol>
+                <li><a href="#s01"><span class="sw" style="background:#dcdcdc"></span><span class="legend-name">bývanie, vybavenosť</span><span class="legend-to">01 Územný plán obce →</span></a></li>
+                <li><a href="#s02"><span class="sw" style="background:#646464"></span><span class="legend-name">výroba, technické vybavenie</span><span class="legend-to">02 EIA zámeru →</span></a></li>
+                <li><a href="#s02"><span class="sw sw--line" style="--sw-c:#00aff0"></span><span class="legend-name">vodstvo, vodný tok</span><span class="legend-to">02 SEA dokumentu →</span></a></li>
+                <li><a href="#s03"><span class="sw" style="background:#82aa50"></span><span class="legend-name">ekostabilizačná vegetácia</span><span class="legend-to">03 Regióny, RÚSES →</span></a></li>
+                <li><a href="#s04"><span class="sw sw--line" style="--sw-c:#0082aa"></span><span class="legend-name">verejný priestor — os, ťažisko</span><span class="legend-to">04 Legislatíva →</span></a></li>
+                <li><a href="#s05"><span class="sw sw--line sw--dash" style="--sw-c:#828282"></span><span class="legend-name">hranica zastavaného územia</span><span class="legend-to">05 Referencie →</span></a></li>
+                <li><a href="#s07"><span class="sw sw--line sw--dash" style="--sw-c:#c9a2e8"></span><span class="legend-name">hranica obce</span><span class="legend-to">07 Kancelária →</span></a></li>
+              </ol>
+              <p class="legend-foot">Farby a čiary podľa jednotného grafického štandardu regulačného výkresu — <a href="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2024/153/" rel="noopener" target="_blank">vyhláška ÚÚPV SR č. 153/2024 Z. z.</a>, príloha č. 2. Schematická ukážka, nie konkrétna obec.</p>
+            </aside>
+          </div>
+          <div class="title-block">
+            <div><b>ÚPN-O</b> · Regulačný výkres · schéma</div>
+            <div>M 1 : 5 000</div>
+            <div>Vyhl. č. 153/2024 Z. z.</div>
+            <div>E.B.D. Kežmarok · 2026</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 01 ÚZEMNÉ PLÁNOVANIE ================= -->
+    <section class="section" id="s01" aria-labelledby="h-s01">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">01</span>
+          <h2 id="h-s01">Obstarávanie územnoplánovacej dokumentácie</h2>
+          <p class="eyebrow">zákon č. 200/2022 Z. z.</p>
+        </div>
+        <div class="cols">
+          <div class="copy reveal">
+            <p class="lead">Územný plán obstaráva obec prostredníctvom odborne spôsobilej osoby. Túto úlohu preberáme my: vedieme proces od prípravných prác po uloženie schválenej dokumentácie v informačnom systéme územného plánovania.</p>
+            <table class="spec">
+              <tr><th scope="row">Právny rámec</th><td><span class="law">zákon č. 200/2022 Z. z.</span> o územnom plánovaní · <span class="law">vyhláška č. 392/2023 Z. z.</span> o obsahu a spôsobe spracovania ÚPD · <span class="law">vyhláška č. 153/2024 Z. z.</span> o štandardoch a metodike (jednotný dátový a grafický štandard)</td></tr>
+              <tr><th scope="row">Objednávateľ</th><td>obec alebo mesto (územný plán obce, územný plán zóny, zmeny a doplnky) · združenie obcí (územný plán mikroregiónu) · samosprávny kraj (územný plán regiónu, koncepcia územného rozvoja) · urbanistickú štúdiu môže obstarať ktokoľvek — firma, občianske združenie, občan</td></tr>
+              <tr><th scope="row">Výstupy</th><td><ul><li>zadanie a jeho prerokovanie</li><li>návrh ÚPD, dohľad nad spracovateľom, prerokovanie s dotknutými orgánmi a verejnosťou</li><li>súbežné posúdenie SEA podľa zákona č. 24/2006 Z. z.</li><li>podklady na schválenie, vyhlásenie záväznej časti, uloženie v IS územného plánovania</li><li>územnoplánovacie podklady: urbanistická štúdia, územný generel, územná prognóza, územno-technické podklady</li></ul></td></tr>
+              <tr><th scope="row">Formát</th><td>digitálna, strojovo čitateľná ÚPD podľa dátového štandardu vyhl. č. 153/2024 Z. z.; výkresy podľa jednotného grafického štandardu; odovzdanie cez portál územného plánovania</td></tr>
+              <tr><th scope="row">Termín</th><td>ÚPD schválená do 31. 3. 2024 musí byť nahradená do <strong>31. 3. 2032</strong>; samosprávne kraje: koncepcia územného rozvoja regiónu do 31. 3. 2028</td></tr>
+              <tr><th scope="row">Financovanie</th><td>dotácia Úradu pre územné plánovanie a výstavbu SR do 80 % oprávnených nákladov; výzvy spravidla začiatkom roka (2026: 15. 1. – 15. 2., alokácia 1,2 mil. €). Pripravíme žiadosť.</td></tr>
+            </table>
+          </div>
+          <figure class="fig reveal">
+            <img src="img/levoca-letecky.jpg" srcset="img/levoca-letecky-800.jpg 800w, img/levoca-letecky-1200.jpg 1200w, img/levoca-letecky.jpg 1600w" sizes="(max-width: 1080px) 100vw, 480px" alt="Šikmý letecký záber na historické jadro Levoče s hradbami, sídliskom a poľnohospodárskou krajinou" loading="lazy" width="1600" height="1067">
+            <figcaption><span><b>Obr. 01</b> — Levoča, historické jadro a hradby, šikmý letecký záber. Územný plán mesta a posúdenie SEA: E.B.D. Kežmarok.</span><span>Foto <a href="https://commons.wikimedia.org/wiki/File:068_Levoca_(Leutschau).JPG" rel="noopener" target="_blank">E. Issel</a>, CC BY-SA 3.0</span></figcaption>
+          </figure>
+        </div>
+
+        <ol class="process reveal" aria-label="Postup obstarávania">
+          <li><div class="step"><span>Krok 1</span><span>obstarávateľ</span></div><h3>Prípravné práce</h3><p>Oznámenie o začatí obstarávania, zber podkladov, výber spracovateľa, žiadosť o dotáciu.</p></li>
+          <li><div class="step"><span>Krok 2</span><span>spracovateľ</span></div><h3>Prieskumy a rozbory</h3><p>Analýza stavu územia, limity a potenciály, krajinnoekologický plán.</p></li>
+          <li><div class="step"><span>Krok 3</span><span>obec · verejnosť</span></div><h3>Zadanie</h3><p>Ciele a požiadavky na riešenie, prerokovanie, schválenie zastupiteľstvom.</p></li>
+          <li><div class="step"><span>Krok 4</span><span><em>SEA súbežne</em></span></div><h3>Návrh ÚPD</h3><p>Spracovanie, dohľad, prerokovanie s dotknutými orgánmi, vyhodnotenie stanovísk.</p></li>
+          <li><div class="step"><span>Krok 5</span><span>IS ÚP</span></div><h3>Schválenie a uloženie</h3><p>Preskúmanie súladu, schválenie, vyhlásenie záväznej časti, uloženie v informačnom systéme.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 02 EIA / SEA ================= -->
+    <section class="section" id="s02" aria-labelledby="h-s02">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">02</span>
+          <h2 id="h-s02">Posudzovanie vplyvov na životné prostredie — EIA a SEA</h2>
+          <p class="eyebrow">zákon č. 24/2006 Z. z.</p>
+        </div>
+        <div class="cols cols--rev">
+          <div class="copy reveal">
+            <p class="lead">Zabezpečíme a spracujeme kompletné hodnotenie vplyvov stavieb a činností (EIA) aj strategických dokumentov (SEA): od posúdenia, či zámer vôbec podlieha konaniu, po zastupovanie navrhovateľa pred okresným úradom.</p>
+            <table class="spec">
+              <tr><th scope="row">Právny rámec</th><td><span class="law">zákon č. 24/2006 Z. z.</span> o posudzovaní vplyvov na životné prostredie v znení <span class="law">zákona č. 269/2025 Z. z.</span> (účinnosť od novembra 2025, časť ustanovení od 1. 7. 2026, prechodné pravidlá pre zisťovacie konania do 31. 12. 2026)</td></tr>
+              <tr><th scope="row">Objednávateľ</th><td>navrhovateľ činnosti — priemyselný investor, developer, prevádzkovateľ · obstarávateľ strategického dokumentu — obec, mesto, kraj (územný plán, jeho zmeny a doplnky, koncepcie)</td></tr>
+              <tr><th scope="row">Konania</th><td><ul><li>posúdenie zaradenia činnosti podľa prílohy č. 8 — prahové hodnoty, zisťovacie konanie alebo povinné hodnotenie</li><li>zisťovacie konanie · rozsah hodnotenia · povinné hodnotenie</li><li>SEA strategického dokumentu — oznámenie, rozsah hodnotenia, správa o hodnotení</li></ul></td></tr>
+              <tr><th scope="row">Výstupy</th><td>zámer navrhovanej činnosti · správa o hodnotení činnosti · oznámenie o zmene navrhovanej činnosti · oznámenie o strategickom dokumente · správa o hodnotení strategického dokumentu · vyhodnotenie stanovísk, účasť na verejnom prerokovaní</td></tr>
+              <tr><th scope="row">Typické zámery</th><td>priemyselné parky a zóny, výrobné a spracovateľské prevádzky (metalurgia, potravinárstvo), poľnohospodárske areály, ťažba štrkopieskov, obchodné centrá, ČOV a kanalizácie, športovo-rekreačné a golfové areály — pozri <a href="#s05">register referencií</a></td></tr>
+              <tr><th scope="row">Naša úloha</th><td>spracovanie dokumentácie, koordinácia odborných posudkov (hluk, ovzdušie, voda, biota), komunikácia s dotknutými orgánmi a verejnosťou, zastupovanie navrhovateľa v konaní</td></tr>
+            </table>
+          </div>
+          <figure class="fig fig--rez reveal">
+            <svg viewBox="0 0 1000 340" role="img" aria-labelledby="rez-title">
+              <title id="rez-title">Schematický rez územím s ochranným pásmom vodného toku, hlukovou izofónou a hladinou podzemnej vody</title>
+              <defs>
+                <pattern id="p-gravel" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#b5b5b2" stroke-width="0.8"/></pattern>
+                <pattern id="p-rock" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 0L9 9M9 0L0 9" stroke="#a9a9a6" stroke-width="0.6"/></pattern>
+                <pattern id="p-soil" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="0.8" fill="#8c8c8c"/></pattern>
+                <clipPath id="c-ground"><path d="M0 172 L200 168 L340 176 L470 206 L500 230 L560 232 L600 210 L680 184 L820 176 L1000 170 L1000 340 L0 340Z"/></clipPath>
+              </defs>
+              <rect width="1000" height="340" fill="#f7f7f5"/>
+              <g clip-path="url(#c-ground)">
+                <rect x="0" y="150" width="1000" height="200" fill="url(#p-rock)"/>
+                <path d="M0 250 C200 235 400 262 520 270 S800 250 1000 245 L1000 150 L0 150Z" fill="url(#p-gravel)"/>
+                <path d="M0 172 L200 168 L340 176 L470 206 L500 230 L560 232 L600 210 L680 184 L820 176 L1000 170 L1000 190 L820 194 L680 200 L600 226 L560 248 L500 246 L470 222 L340 192 L200 184 L0 188Z" fill="url(#p-soil)"/>
+                <path d="M0 250 C200 235 400 262 520 270 S800 250 1000 245" fill="none" stroke="#8c8c8c" stroke-width="0.8"/>
+              </g>
+              <path d="M0 172 L200 168 L340 176 L470 206 L500 230 L560 232 L600 210 L680 184 L820 176 L1000 170" fill="none" stroke="#141414" stroke-width="1.6"/>
+              <path d="M0 214 C150 208 300 220 470 226 L600 224 C750 214 900 214 1000 212" fill="none" stroke="#00aff0" stroke-width="1.2" stroke-dasharray="5 3"/>
+              <path d="M500 230 L560 232 L560 222 Q530 214 500 222Z" fill="#00aff0" opacity="0.7"/>
+              <g fill="#646464"><rect x="120" y="108" width="190" height="60"/><rect x="316" y="132" width="40" height="42"/><rect x="130" y="92" width="16" height="16"/></g>
+              <g fill="#dcdcdc" stroke="#141414" stroke-width="1"><path d="M700 184 v-26 h32 v26z M700 158 l16-14 16 14"/><path d="M752 180 v-26 h36 v26z M752 154 l18-15 18 15"/><path d="M810 176 v-24 h30 v24z M810 152 l15-12 15 12"/></g>
+              <rect x="618" y="204" width="44" height="6" fill="#bebebe" stroke="#141414" stroke-width="0.8"/>
+              <path d="M215 108 A230 230 0 0 1 445 338" fill="none" stroke="#e69600" stroke-width="1.4" stroke-dasharray="6 4"/>
+              <path d="M215 108 A320 320 0 0 1 535 428" fill="none" stroke="#e69600" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+              <g fill="none" stroke="#141414" stroke-width="0.8">
+                <path d="M560 262 v14 M618 262 v14 M560 270 h58"/>
+                <path d="M120 84 v-14 M310 84 v-14 M120 76 h190"/>
+                              </g>
+              <g font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#141414">
+                <text x="14" y="22" font-weight="500">REZ A–A′ · SCHÉMA BEZ MIERKY</text>
+                <text x="14" y="38" fill="#5a5a5a">EIA — posudzované vplyvy v jednom profile</text>
+                <text x="120" y="66">priemyselný park (výroba)</text>
+                <text x="470" y="292">ochranné pásmo vodného toku</text>
+                <text x="700" y="140">obytná zóna</text>
+                                <text x="14" y="206" fill="#0082aa">hladina podzemnej vody</text>
+                <text x="392" y="330" fill="#9a6400">hluková izofóna</text>
+                                <text x="620" y="198">cesta III. tr.</text>
+                <text x="14" y="265" fill="#5a5a5a">štrky a piesky</text>
+                <text x="14" y="318" fill="#5a5a5a">flyš — skalné podložie</text>
+                <text x="940" y="330" text-anchor="end" fill="#8c8c8c">schéma · nie konkrétna lokalita</text>
+              </g>
+            </svg>
+            <figcaption><span><b>Obr. 02</b> — Schematický rez územím: čo sa v EIA vyhodnocuje na jednom profile — hluk, voda, podložie, odstupy od obytnej zóny a vodného toku.</span><span>Ilustrácia E.B.D.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 REGIÓNY ================= -->
+    <section class="section" id="s03" aria-labelledby="h-s03">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">03</span>
+          <h2 id="h-s03">Regionálne koncepcie a krajina</h2>
+          <p class="eyebrow">kraje · okresy · združenia obcí</p>
+        </div>
+        <div class="cols">
+          <div class="copy reveal">
+            <p class="lead">Podieľame sa na koncepčných dokumentoch, ktoré určujú smer rozvoja celých regiónov — od územného plánu veľkého územného celku po regionálny územný systém ekologickej stability.</p>
+            <table class="spec">
+              <tr><th scope="row">Dokumenty</th><td><ul><li>územný plán regiónu / veľkého územného celku — spoluautorstvo (ÚPN VÚC Prešovský kraj)</li><li>stratégia a koncepcia rozvoja životného prostredia okresu — spoluautorstvo (okres Poprad)</li><li>regionálny územný systém ekologickej stability — obstarávanie (RÚSES okresu Poprad)</li><li>krajinnoekologické podklady pre územné plány obcí a mikroregiónov</li></ul></td></tr>
+              <tr><th scope="row">Objednávateľ</th><td>samosprávny kraj, okresné úrady — odbory starostlivosti o životné prostredie, združenia obcí, mikroregióny</td></tr>
+              <tr><th scope="row">Nadväznosť</th><td>Koncepcia územného rozvoja regiónu musí byť podľa zákona č. 200/2022 Z. z. obstaraná do <strong>31. 3. 2028</strong>; nadväzujúce územné plány obcí do 31. 3. 2032. Zákon o krajinnom plánovaní (krajinné plány ako podklad ÚPD) vláda schválila v júni 2024, parlament ho zatiaľ neprijal — sledujeme.</td></tr>
+            </table>
+          </div>
+          <div class="reveal">
+            <table class="spec">
+              <tr><th scope="row">Územie</th><td>Prešovský a Košický kraj — Spiš, Podtatranská kotlina, Šariš, Zemplín; podľa dohody celé Slovensko</td></tr>
+                            <tr><th scope="row">Prax</th><td>28 rokov pod troma režimami stavebného práva — zákon č. 50/1976 Zb., zákony č. 200/2022 Z. z. a 25/2025 Z. z.</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 LEGISLATÍVA ================= -->
+    <section class="section" id="s04" aria-labelledby="h-s04">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">04</span>
+          <h2 id="h-s04">Právny rámec 2024 – 2026: čo sa zmenilo a čo z toho vyplýva</h2>
+          <p class="eyebrow">stav k septembru 2026 · informatívny prehľad</p>
+        </div>
+
+        <ol class="timeline reveal" aria-label="Časová os právnych predpisov">
+          <li><time>1976</time><p>zákon č. 50/1976 Zb. — stavebný zákon; platil 49 rokov</p></li>
+          <li><time>1994</time><p>zákon č. 127/1994 Z. z. — prvý zákon o posudzovaní vplyvov (EIA)</p></li>
+          <li class="mark"><time>1998</time><p>vznik environmentálnej kancelárie E.B.D. Kežmarok</p></li>
+          <li><time>2006</time><p>zákon č. 24/2006 Z. z. o posudzovaní vplyvov — platí dodnes, vyše 30 noviel</p></li>
+          <li><time>2024</time><p>1. 4. účinnosť zákona č. 200/2022 Z. z.; vyhl. č. 392/2023 a 153/2024 Z. z.; vznik ÚÚPV SR a portálu ÚP</p></li>
+          <li><time>2025</time><p>1. 4. stavebný zákon č. 25/2025 Z. z.; november: novela EIA č. 269/2025 Z. z.</p></li>
+          <li><time>2026</time><p>1. 7. ďalšie ustanovenia novely EIA; novely ÚP a stavebného zákona v legislatívnom procese</p></li>
+          <li class="alert"><time>2032</time><p>31. 3. — územné plány schválené pred 1. 4. 2024 strácajú platnosť</p></li>
+        </ol>
+
+        <div class="laws reveal">
+          <div class="law-head-row"><span>č.</span><span>Predpis · účinnosť</span><span>Čo mení</span><span>Čo to znamená</span></div>
+
+          <article class="law-row">
+            <span class="sn">04.1</span>
+            <div>
+              <h3>Zákon č. 200/2022 Z. z. o územnom plánovaní</h3>
+              <div class="law-meta"><span><b>Účinný</b> od 1. 4. 2024</span><span><b>Vykonávacie predpisy</b> vyhl. č. 392/2023, 153/2024 Z. z.</span><span class="alert"><b>Termín</b> 31. 3. 2032 (obce) · 31. 3. 2028 (kraje)</span><span><b>Stav</b> novela v príprave (MD SR, MPK 2/2026)</span></div>
+            </div>
+            <ul>
+              <li>Dokumentácia schválená do 31. 3. 2024 musí byť do <strong>31. 3. 2032</strong> nahradená dokumentáciou podľa nového zákona, inak stráca platnosť.</li>
+              <li>ÚPD sa spracúva digitálne, v jednotnom dátovom a grafickom štandarde; procesy bežia cez portál územného plánovania.</li>
+              <li>Nový typ dokumentácie — územný plán mikroregiónu; zrušenie etapy konceptu; koordinácia so SEA.</li>
+              <li>Úrad pre územné plánovanie a výstavbu SR: register odborne spôsobilých osôb, metodika, dotácie do 80 % nákladov.</li>
+            </ul>
+            <p class="so-what"><b>Pre obec</b>Do konca roka 2025 začalo obstarávanie novej ÚPD vyše sto obcí a miest. Kapacity spracovateľov sa s blížiacim sa rokom 2032 zaplnia; kto začne skôr, má výber spracovateľa aj dotačný cyklus na svojej strane.</p>
+          </article>
+
+          <article class="law-row">
+            <span class="sn">04.2</span>
+            <div>
+              <h3>Zákon č. 25/2025 Z. z. o výstavbe (stavebný zákon)</h3>
+              <div class="law-meta"><span><b>Účinný</b> od 1. 4. 2025</span><span><b>Novela</b> schválená 10. 4. 2025</span><span><b>Stav</b> ďalšia novela v NR SR (2026), zmeny vyhlášok o členení stavieb</span></div>
+            </div>
+            <ul>
+              <li>Jedno konanie o stavebnom zámere namiesto územného a stavebného konania; digitalizácia; prísnejší režim nepovolených stavieb.</li>
+              <li>Obec ako orgán územného plánovania vydáva <strong>záväzné stanovisko o súlade zámeru s územným plánom</strong>.</li>
+              <li>Novela rozšírila okruh záväzných stanovísk (drobné stavby nad 25 m², vedenia elektronických komunikácií, informačné konštrukcie nad 1,2 m²); lehotu možno predĺžiť na 60 dní, inak platí fikcia súhlasu.</li>
+            </ul>
+            <p class="so-what"><b>Pre obec</b>Záväzné stanovisko sa opiera výlučne o platný územný plán. Obec bez aktuálnej ÚPD nemá o čo oprieť súhlas ani nesúhlas — a lehoty s fikciou súhlasu bežia bez ohľadu na to.</p>
+          </article>
+
+          <article class="law-row">
+            <span class="sn">04.3</span>
+            <div>
+              <h3>Zákon č. 269/2025 Z. z. — novela zákona č. 24/2006 Z. z. (EIA)</h3>
+              <div class="law-meta"><span><b>Schválená</b> NR SR 23. 9. 2025</span><span><b>Účinná</b> od novembra 2025 · časť od 1. 7. 2026</span><span class="alert"><b>Prechodné pravidlá</b> zisťovacie konania do 31. 12. 2026</span></div>
+            </div>
+            <ul>
+              <li>Takmer päťdesiat novelizačných bodov; prepojenie EIA s novým stavebným zákonom a povoľovacími predpismi.</li>
+              <li>Zjednotené povoľovanie pre zariadenia OZE; veterné a slnečné elektrárne ako projekty vo verejnom záujme.</li>
+              <li>Povinný <strong>nulový variant</strong> v každom hodnotení; činnosť nesmie byť prevádzkovaná bez riadneho posúdenia dlhšie než dva roky.</li>
+            </ul>
+            <p class="so-what"><b>Pre investora a obec</b>Zaradenie zámeru podľa prílohy č. 8 si overte pred projektovou prípravou — po novele sa mení, čo ide do zisťovacieho konania a v akých lehotách. Územný plán a jeho zmeny a doplnky zostávajú strategickým dokumentom so SEA, ktorá teraz beží súbežne s prerokovaním návrhu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 REFERENCIE ================= -->
+    <section class="section" id="s05" aria-labelledby="h-s05">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">05</span>
+          <h2 id="h-s05">Register referencií</h2>
+          <p class="eyebrow">33 dokumentov · 18 obcí, miest a regiónov</p>
+        </div>
+        <div class="refs">
+          <figure class="fig map-frame reveal">
+            <svg class="mapa" xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 1000 522" role="img" aria-labelledby="mapa-title">
+<title id="mapa-title">Mapa Slovenska s vyznačenými obcami a mestami, pre ktoré sme pracovali</title>
+<g class="m-kraje" fill="#f4f4f2" stroke="#c8c8c5" stroke-width="1">
+<path d="M88.1,254.5 L88.1,254.5Z "><title>Bratislavský kraj</title></path>
+<path d="M67.1,196.4 L67.1,196.4Z "><title>Trnavský kraj</title></path>
+<path d="M265.6,77.7 L265.6,77.7Z "><title>Trenčiansky kraj</title></path>
+<path d="M204.7,237.8 L204.7,237.8Z "><title>Nitriansky kraj</title></path>
+<path d="M456.2,0.0 L456.2,0.0Z "><title>Žilinský kraj</title></path>
+<path d="M475.9,177.6 L475.9,177.6Z "><title>Banskobystrický kraj</title></path>
+<path d="M779.4,43.0 L779.4,43.0Z " fill="#e9e9e6"><title>Prešovský kraj</title></path>
+<path d="M643.8,157.5 L643.8,157.5Z " fill="#e9e9e6"><title>Košický kraj</title></path>
+</g>
+<g class="m-okresy" fill="none" stroke="#c8c8c5" stroke-width="0.6">
+<path d="M779.4,43.0 L779.4,43.0Z "><title>okres Bardejov</title></path>
+<path d="M864.6,109.8 L864.6,109.8Z "><title>okres Humenné</title></path>
+<path d="M618.9,56.1 L618.9,56.1Z "><title>okres Kežmarok</title></path>
+<path d="M666.2,121.3 L666.2,121.3Z "><title>okres Levoča</title></path>
+<path d="M875.0,60.7 L875.0,60.7Z "><title>okres Medzilaborce</title></path>
+<path d="M585.2,81.6 L585.2,81.6Z "><title>okres Poprad</title></path>
+<path d="M758.5,114.6 L758.5,114.6Z "><title>okres Prešov</title></path>
+<path d="M687.6,101.4 L687.6,101.4Z "><title>okres Sabinov</title></path>
+<path d="M930.4,113.5 L930.4,113.5Z "><title>okres Snina</title></path>
+<path d="M629.6,52.8 L629.6,52.8Z "><title>okres Stará Ľubovňa</title></path>
+<path d="M861.8,67.3 L861.8,67.3Z "><title>okres Stropkov</title></path>
+<path d="M836.9,44.0 L836.9,44.0Z "><title>okres Svidník</title></path>
+<path d="M857.0,128.5 L857.0,128.5Z "><title>okres Vranov nad Topľou</title></path>
+<path d="M717.3,175.3 L717.3,175.3Z "><title>okres Gelnica</title></path>
+<path d="M759.9,215.5 L759.9,215.5Z "><title>okres Košice I</title></path>
+<path d="M758.4,233.3 L758.4,233.3Z "><title>okres Košice II</title></path>
+<path d="M783.8,233.9 L783.8,233.9Z "><title>okres Košice III</title></path>
+<path d="M777.4,235.9 L777.4,235.9Z "><title>okres Košice IV</title></path>
+<path d="M739.7,189.0 L739.7,189.0Z "><title>okres Košice - okolie</title></path>
+<path d="M870.1,188.9 L870.1,188.9Z "><title>okres Michalovce</title></path>
+<path d="M617.7,185.2 L617.7,185.2Z "><title>okres Rožňava</title></path>
+<path d="M936.1,180.7 L936.1,180.7Z "><title>okres Sobrance</title></path>
+<path d="M643.8,157.5 L643.8,157.5Z "><title>okres Spišská Nová Ves</title></path>
+<path d="M822.2,217.2 L822.2,217.2Z "><title>okres Trebišov</title></path>
+</g>
+<g class="m-kraje-obrys" fill="none" stroke="#8c8c8c" stroke-width="1.1">
+<path d="M779.4,43.0 L779.4,43.0Z "/>
+<path d="M643.8,157.5 L643.8,157.5Z "/>
+</g>
+<g class="m-body">
+<circle cx="775.1" cy="85.0" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Bardejov</title></circle>
+<text x="784.1" y="89.0" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Bardejov</text>
+<circle cx="584.0" cy="142.2" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Batizovce</title></circle>
+<circle cx="626.8" cy="126.9" r="7" fill="#e69600" stroke="#fff" stroke-width="1.5"><title>Kežmarok</title></circle>
+<text x="636.8" y="119.9" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f" font-weight="600">Kežmarok</text>
+<circle cx="704.9" cy="185.0" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Krompachy</title></circle>
+<text x="713.9" y="197.0" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Krompachy</text>
+<circle cx="896.6" cy="312.5" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Kráľovský Chlmec</title></circle>
+<text x="836.6" y="328.5" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Kráľovský Chlmec</text>
+<circle cx="655.6" cy="156.6" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Levoča</title></circle>
+<text x="664.6" y="169.6" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Levoča</text>
+<circle cx="620.3" cy="126.2" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Malý Slavkov</title></circle>
+<circle cx="772.4" cy="184.1" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Petrovany</title></circle>
+<circle cx="604.3" cy="147.2" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Poprad</title></circle>
+<text x="550.3" y="161.2" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Poprad</text>
+<circle cx="767.6" cy="162.2" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Prešov</title></circle>
+<text x="776.6" y="166.2" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Prešov</text>
+<circle cx="618.8" cy="83.5" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Reľov</title></circle>
+<circle cx="672.6" cy="82.5" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Stará Ľubovňa</title></circle>
+<text x="681.6" y="76.5" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Stará Ľubovňa</text>
+<circle cx="587.9" cy="146.3" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Svit</title></circle>
+<text x="555.9" y="138.3" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Svit</text>
+<circle cx="577.1" cy="91.4" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Tatranská Javorina</title></circle>
+<circle cx="131.4" cy="326.7" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Trnava</title></circle>
+<text x="140.4" y="330.7" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#1f1f1f">Trnava</text>
+<circle cx="615.3" cy="132.8" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Veľká Lomnica</title></circle>
+<circle cx="626.2" cy="138.9" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Vrbov</title></circle>
+<circle cx="844.0" cy="178.2" r="4.5" fill="#0082aa" stroke="#fff" stroke-width="1.5"><title>Čičava</title></circle>
+</g></svg>
+            <div class="map-key"><span><i class="hq"></i>sídlo kancelárie</span><span><i></i>obec / mesto s referenciou</span><span><i class="area"></i>Prešovský a Košický kraj</span></div>
+            <figcaption><span><b>Obr. 03</b> — Rozmiestnenie referencií. Hranice krajov a okresov: ÚGKK SR.</span></figcaption>
+          </figure>
+          <table class="register reveal">
+            <thead><tr><th scope="col">Obec · mesto · lokalita</th><th scope="col">Okres</th><th scope="col">Dokument</th><th scope="col">Úloha</th></tr></thead>
+            <tbody>
+              <tr class="group"><th colspan="4" scope="colgroup">Územnoplánovacia dokumentácia <span>07</span></th></tr>
+              <tr><th scope="row">Levoča</th><td>LE</td><td><span class="tag">ÚPN mesta</span></td><td>obstarávateľ</td></tr>
+              <tr><th scope="row">Levočská Dolina</th><td>LE</td><td><span class="tag">ÚPN zóny</span></td><td>obstarávateľ</td></tr>
+              <tr><th scope="row">Svit</th><td>PP</td><td><span class="tag">ÚPN mesta</span></td><td>obstarávateľ</td></tr>
+              <tr><th scope="row">Čičava</th><td>VT</td><td><span class="tag">ÚPN obce</span></td><td>obstarávateľ</td></tr>
+              <tr><th scope="row">Malý Slavkov</th><td>KK</td><td><span class="tag">ÚPN obce</span></td><td>obstarávateľ</td></tr>
+              <tr><th scope="row">Tatranská Javorina</th><td>PP</td><td><span class="tag">ÚPN obce</span></td><td>obstarávateľ</td></tr>
+              <tr><th scope="row">Vrbov</th><td>KK</td><td><span class="tag">ÚPN obce</span></td><td>obstarávateľ</td></tr>
+
+              <tr class="group"><th colspan="4" scope="colgroup">Regionálne koncepcie <span>04</span></th></tr>
+              <tr><th scope="row">Prešovský kraj</th><td>—</td><td><span class="tag">ÚPN VÚC</span></td><td>spoluautor</td></tr>
+              <tr><th scope="row">okres Poprad</th><td>PP</td><td><span class="tag">Stratégia rozvoja ŽP</span></td><td>spoluautor</td></tr>
+              <tr><th scope="row">okres Poprad</th><td>PP</td><td><span class="tag">Koncepcia rozvoja ŽP</span></td><td>spoluautor</td></tr>
+              <tr><th scope="row">okres Poprad</th><td>PP</td><td><span class="tag">RÚSES</span></td><td>obstarávateľ</td></tr>
+
+              <tr class="group"><th colspan="4" scope="colgroup">Strategické dokumenty — SEA <span>02</span></th></tr>
+              <tr><th scope="row">Levoča</th><td>LE</td><td><span class="tag">SEA · ÚPN mesta</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Veľká Lomnica — golfový areál</th><td>KK</td><td><span class="tag">SEA · zmena ÚPN obce</span></td><td>spracovateľ</td></tr>
+
+              <tr class="group"><th colspan="4" scope="colgroup">Stavby a činnosti — EIA <span>20</span></th></tr>
+              <tr><th scope="row">Kežmarok — priemyselný park</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Levoča — priemyselný park</th><td>LE</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Petrovany — priemyselná zóna</th><td>PO</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Kráľovský Chlmec — priemyselná zóna</th><td>TV</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Krompachy — hnedý priemyselný park</th><td>SN</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Krompachy — KFP Kovohuty</th><td>SN</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Krompachy — Kovohuty, výroba medeného drôtu</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Krompachy — Kovohuty, výroba anódovej medi</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Krompachy — Kovohuty, síran zinočnatý</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Veľká Lomnica — golfový areál</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Reľov — športovo-rekreačný areál Magurské sedlo</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Kežmarok — syráreň, Tatranská mliekareň</th><td>KK</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Kežmarok — kravín s dojárňou, PD</th><td>KK</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Svit — ťažba štrkopieskov Batizovce II</th><td>PP</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Trnava — výrobný závod</th><td>TT</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Bardejov — spracovanie starých vozidiel</th><td>BJ</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Levoča — ČOV a kanalizácia, Levočská dolina</th><td>LE</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Svit — predajňa potravín</th><td>PP</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Stará Ľubovňa — centrum obchodu a služieb</th><td>SL</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr><th scope="row">Prešov-Sekčov — centrum obchodu a služieb</th><td>PO</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 PORADENSTVO ================= -->
+    <section class="section" id="s06" aria-labelledby="h-s06">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">06</span>
+          <h2 id="h-s06">Poradenstvo a konzultácie k novej legislatíve</h2>
+          <p class="eyebrow">orientačný cenník</p>
+        </div>
+        <div class="cols">
+          <div class="copy reveal">
+            <p class="lead">Starostom, obecným úradom aj investorom poskytujeme konzultácie k zákonu č. 200/2022 Z. z., k novému stavebnému zákonu a k novele zákona o posudzovaní vplyvov. Prvý rozhovor je bez poplatku; ďalšie služby podľa cenníka alebo individuálnej ponuky.</p>
+            <table class="spec price">
+              <thead><tr><th scope="col">Služba</th><th scope="col">Rozsah · forma</th><th scope="col">Cena</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Úvodná konzultácia</strong></td><td>do 30 min · telefón alebo online</td><td class="num">bez poplatku</td></tr>
+                <tr><td><strong>Konzultácia k stavu územného plánu</strong><br><span class="muted">platnosť ÚPD, termíny do roku 2032, dotácia ÚÚPV SR</span></td><td>60 min · online alebo v kancelárii</td><td class="num">60 €</td></tr>
+                <tr><td><strong>Konzultácia k záväznému stanovisku obce</strong><br><span class="muted">súlad stavebného zámeru s ÚPD podľa zákona č. 25/2025 Z. z.</span></td><td>60 min · online alebo v kancelárii</td><td class="num">60 €</td></tr>
+                <tr><td><strong>Posúdenie zaradenia zámeru</strong><br><span class="muted">podlieha zámer EIA? príloha č. 8 zákona č. 24/2006 Z. z.</span></td><td>písomné stanovisko · do 5 pracovných dní</td><td class="num">od 150 €</td></tr>
+                <tr><td><strong>Príprava žiadosti o dotáciu ÚÚPV SR</strong><br><span class="muted">na spracovanie územného plánu</span></td><td>kompletizácia žiadosti a príloh</td><td class="num">od 300 €</td></tr>
+                <tr><td><strong>Audit územnoplánovacej dokumentácie obce</strong><br><span class="muted">platnosť, súlad s novým zákonom, harmonogram a odhad nákladov do roku 2032</span></td><td>písomná správa · prerokovanie so zastupiteľstvom</td><td class="num">od 400 €</td></tr>
+                <tr><td><strong>Obstarávanie ÚPD · dokumentácia EIA / SEA</strong></td><td>podľa rozsahu a stupňa dokumentácie</td><td class="num">individuálna ponuka</td></tr>
+              </tbody>
+            </table>
+            <p class="office-note">Ceny sú orientačné; konečnú ponuku pripravíme podľa rozsahu a počtu obyvateľov obce alebo veľkosti zámeru. Cestovné v okresoch Kežmarok, Poprad a Levoča neúčtujeme.</p>
+          </div>
+          <div class="reveal">
+            <div class="howto">
+              <h3>Ako nás osloviť</h3>
+              <p>Napíšte e-mail — stačí pár riadkov, zvyšok doriešime telefonicky:</p>
+              <ol>
+                <li><b>Kto ste</b> — obec, mesto, firma, súkromný investor.</li>
+                <li><b>O čo ide</b> — územný plán, zmeny a doplnky, zámer EIA, strategický dokument SEA, záväzné stanovisko.</li>
+                <li><b>Aktuálny stav</b> — rok schválenia platného územného plánu, stupeň prípravy zámeru.</li>
+                <li><b>Termín</b> — dokedy potrebujete výstup.</li>
+              </ol>
+              <a href="#s07" class="btn js-mail" data-mail="dopyt"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Napísať dopyt</span></a>
+              <p class="howto-note">Tlačidlo otvorí váš poštový program s predvyplneným predmetom a osnovou správy. Adresa: <span class="js-mail" data-mail="plain">ebdkezmarok [zavináč] ebdkezmarok.sk</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 KANCELÁRIA ================= -->
+    <section class="section" id="s07" aria-labelledby="h-s07">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">07</span>
+          <h2 id="h-s07">Kancelária a kontakt</h2>
+          <p class="eyebrow">Starý trh 2 · Kežmarok</p>
+        </div>
+        <div class="office">
+          <div class="reveal">
+            <table class="spec" aria-label="Údaje o kancelárii">
+              <tr><th scope="row">Kancelária</th><td>E.B.D. Kežmarok — environmentálna kancelária, založená 1998</td></tr>
+              <tr><th scope="row">Vedie</th><td>Ing. Jaroslav Lizák</td></tr>
+              <tr><th scope="row">Adresa</th><td>Starý trh 2, 060 01 Kežmarok</td></tr>
+              <tr><th scope="row">Telefón</th><td><a href="tel:+421524525124" class="law">052 452 5124</a> <span class="muted">kancelária</span> · <a href="tel:+421903642470" class="law">0903 642 470</a> <span class="muted">mobil</span></td></tr>
+              <tr><th scope="row">E-mail</th><td><span class="law js-mail" data-mail="plain">ebdkezmarok [zavináč] ebdkezmarok.sk</span></td></tr>
+              <tr><th scope="row">IČO · DIČ</th><td><span class="law">34631615</span> · <span class="law">1023243331</span></td></tr>
+              <tr><th scope="row">Obstarávanie ÚPD</th><td>prostredníctvom odborne spôsobilej osoby na obstarávanie ÚPP a ÚPD</td></tr>
+              <tr><th scope="row">Pôsobnosť</th><td>Prešovský a Košický kraj; podľa dohody celé Slovensko</td></tr>
+            </table>
+            <div class="contact-actions">
+              <a href="#s06" class="btn js-mail" data-mail="dopyt"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Napísať</span></a>
+              <a href="tel:+421524525124" class="btn btn--ghost"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>052 452 5124</span></a>
+            </div>
+            <p class="office-note">Prvá konzultácia je nezáväzná: prejdeme stav vašej územnoplánovacej dokumentácie, termíny do roku 2032, možnosti dotácie alebo zaradenie vášho zámeru podľa zákona o posudzovaní vplyvov.</p>
+          </div>
+          <div class="reveal">
+            <figure class="fig">
+              <img src="img/kezmarok-hlavne-namestie.jpg" srcset="img/kezmarok-hlavne-namestie-700.jpg 700w, img/kezmarok-hlavne-namestie.jpg 1400w" sizes="(max-width: 1080px) 100vw, 480px" alt="Meštiansky dom s dreveným štítom na Hlavnom námestí č. 51 v Kežmarku" loading="lazy" width="1400" height="937">
+              <figcaption><span><b>Obr. 04</b> — Kežmarok, Hlavné námestie 51, mestská pamiatková rezervácia; kancelária je o ulicu ďalej.</span><span>Foto <a href="https://commons.wikimedia.org/wiki/File:Ke%C5%BEmarok_-_Hlavn%C3%A9_n%C3%A1m._%C4%8D._51.JPG" rel="noopener" target="_blank">P. Kunec</a>, CC BY-SA 4.0</span></figcaption>
+            </figure>
+            <div class="map-embed">
+              <iframe title="Mapa — Starý trh 2, Kežmarok" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=20.4215%2C49.1345%2C20.4395%2C49.1440&amp;layer=mapnik&amp;marker=49.1392%2C20.4302"></iframe>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Star%C3%BD+trh+2%2C+060+01+Ke%C5%BEmarok" rel="noopener" target="_blank">Otvoriť v Google Maps ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-row">
+        <span>© 1998–2026 E.B.D. Kežmarok · Starý trh 2, 060 01 Kežmarok · IČO 34631615</span>
+        <ul class="footer-links">
+          <li><a href="#s01">01 Územné plánovanie</a></li>
+          <li><a href="#s02">02 EIA / SEA</a></li>
+          <li><a href="#s04">04 Legislatíva</a></li>
+          <li><a href="#s05">05 Referencie</a></li>
+          <li><a href="#s06">06 Poradenstvo</a></li>
+          <li><a href="#s07">07 Kontakt</a></li>
+        </ul>
+      </div>
+      <p class="footer-credits">Prehľad legislatívy má informatívny charakter a nenahrádza právne poradenstvo; stav k septembru 2026. Farebnosť schémy výkresu podľa vyhlášky ÚÚPV SR č. 153/2024 Z. z., príloha č. 2. Hranice krajov a okresov: ÚGKK SR (cez slovakia-gps-data). Fotografie z Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:068_Levoca_(Leutschau).JPG" rel="noopener" target="_blank">Levoča</a> — Ekkhard Issel, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license noopener" target="_blank">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Ke%C5%BEmarok_-_Hlavn%C3%A9_n%C3%A1m._%C4%8D._51.JPG" rel="noopener" target="_blank">Kežmarok, Hlavné námestie</a> — Patrik Kunec, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener" target="_blank">CC BY-SA 4.0</a>. Mapa: © prispievatelia <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>
