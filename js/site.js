@@ -1,4 +1,5 @@
-/* E.B.D. Kežmarok — progressive enhancement. Page reads fully without JS. */
+/* E.B.D. Kežmarok — progressive enhancement. The page reads fully without JS.
+   No third-party code, no network requests, no innerHTML. */
 (function () {
   'use strict';
 
@@ -7,7 +8,6 @@
   var toggle = nav && nav.querySelector('.nav-toggle');
   var links = Array.prototype.slice.call(doc.querySelectorAll('.nav-links a'));
   var sections = Array.prototype.slice.call(doc.querySelectorAll('main section[id]'));
-  var sheet = doc.querySelector('.sheet');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* e-mail: never present as plain text in the HTML; assembled here.
@@ -27,26 +27,17 @@
   Array.prototype.slice.call(doc.querySelectorAll('.js-mail')).forEach(function (el) {
     var kind = el.getAttribute('data-mail');
     if (kind === 'plain') {
-      if (el.tagName === 'A') { el.href = 'mailto:' + addr; }
-      else {
-        var a = doc.createElement('a');
-        a.href = 'mailto:' + addr;
-        a.textContent = addr;
-        a.className = el.className.replace('js-mail', '').trim();
-        el.replaceWith(a);
-      }
+      if (el.tagName === 'A') { el.href = 'mailto:' + addr; return; }
+      var a = doc.createElement('a');
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+      a.className = el.className.replace('js-mail', '').trim();
+      el.replaceWith(a);
       return;
     }
     var t = templates[kind] || templates.konzultacia;
     el.href = 'mailto:' + addr + '?subject=' + encodeURIComponent(t.s) + '&body=' + encodeURIComponent(t.b);
   });
-
-  /* hero drawing: layers appear in drawing order, once */
-  if (sheet) {
-    requestAnimationFrame(function () {
-      setTimeout(function () { sheet.classList.add('drawn'); }, 80);
-    });
-  }
 
   /* mobile menu */
   if (toggle) {
@@ -67,6 +58,16 @@
         toggle.setAttribute('aria-expanded', 'false');
         toggle.focus();
       }
+    });
+  }
+
+  /* register: long EIA group collapsed on phones */
+  var register = doc.getElementById('register');
+  var moreBtn = register && register.querySelector('.more-toggle button');
+  if (moreBtn) {
+    moreBtn.addEventListener('click', function () {
+      register.classList.add('expanded');
+      moreBtn.setAttribute('aria-expanded', 'true');
     });
   }
 
@@ -106,7 +107,15 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
-  /* anchor scroll offset for fixed nav */
+  /* open the FAQ item when linked to directly (#faq stays a heading) */
+  function openTargetDetails() {
+    var t = location.hash && doc.querySelector(location.hash);
+    if (t && t.tagName === 'DETAILS') t.open = true;
+  }
+  openTargetDetails();
+  window.addEventListener('hashchange', openTargetDetails);
+
+  /* anchor scroll offset for the fixed nav */
   doc.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href^="#"]');
     if (!a) return;

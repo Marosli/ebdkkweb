@@ -2,53 +2,115 @@
 <html lang="sk">
 <!--
     E.B.D. Kežmarok — environmentálna kancelária (od 1998)
-    Redesign 2026. Sémantické HTML, CSS custom properties, vanilla JS.
-    Typografia: IBM Plex Sans / IBM Plex Mono (Google Fonts).
-    Farebnosť výkresu: vyhláška ÚÚPV SR č. 153/2024 Z. z., príloha č. 2.
-    Fotografie: Wikimedia Commons (CC BY-SA), autori v popisoch a pätičke.
+    Sémantické HTML, CSS custom properties, vanilla JS bez závislostí.
+    Typografia: IBM Plex Sans / IBM Plex Mono, hostované lokálne (OFL 1.1).
+    Farebnosť výkresu a loga: vyhláška ÚÚPV SR č. 153/2024 Z. z., príloha č. 2.
+    Fotografia: Wikimedia Commons (CC BY-SA), autor v popise a v pätičke.
 -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E.B.D. Kežmarok — územné plány obcí, EIA/SEA, regionálne koncepcie</title>
-  <meta name="description" content="Environmentálna kancelária E.B.D. Kežmarok, od roku 1998: obstarávanie územnoplánovacej dokumentácie podľa zákona č. 200/2022 Z. z., posudzovanie vplyvov EIA/SEA podľa zákona č. 24/2006 Z. z., regionálne koncepcie. Prešovský a Košický kraj.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>E.B.D. Kežmarok — územné plány obcí, EIA/SEA, regionálne koncepcie | Ľubica – Kežmarok</title>
+  <meta name="description" content="Environmentálna kancelária E.B.D. Kežmarok (od roku 1998): obstarávanie územných plánov obcí a miest podľa zákona č. 200/2022 Z. z., posudzovanie vplyvov na životné prostredie EIA/SEA, regionálne koncepcie a konzultácie k novej legislatíve. Prešovský a Košický kraj.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://ebdkezmarok.sk/">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="E.B.D. Kežmarok">
+  <meta property="og:url" content="https://ebdkezmarok.sk/">
   <meta property="og:title" content="E.B.D. Kežmarok — územné plány obcí, EIA/SEA, regionálne koncepcie">
-  <meta property="og:description" content="Od roku 1998 obstarávame územné plány a spracúvame posudzovanie vplyvov na životné prostredie pre obce, mestá a investorov.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141414'/%3E%3Cpath d='M6 6h20v20H6z' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3Cpath d='M6 15h20M14 6v20' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M6 21c5-6 10 2 20-4' fill='none' stroke='%230082aa' stroke-width='2'/%3E%3C/svg%3E">
+  <meta property="og:description" content="Od roku 1998 obstarávame územné plány a spracúvame posudzovanie vplyvov na životné prostredie pre obce, mestá a investorov. Konzultácie k zákonu č. 200/2022 Z. z., stavebnému zákonu a novele EIA.">
+  <meta property="og:image" content="https://ebdkezmarok.sk/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Schéma regulačného výkresu územného plánu obce a názov kancelárie E.B.D. Kežmarok">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <script>document.documentElement.classList.add('js');</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/ibm-plex-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-600-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/site.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "E.B.D. Kežmarok",
-    "description": "Obstarávanie územnoplánovacej dokumentácie, posudzovanie vplyvov na životné prostredie (EIA/SEA), regionálne environmentálne koncepcie.",
-    "foundingDate": "1998",
-    "founder": { "@type": "Person", "name": "Ing. Jaroslav Lizák" },
-    "telephone": ["+421524525124", "+421903642470"],
-    "address": { "@type": "PostalAddress", "streetAddress": "Starý trh 2", "postalCode": "060 01", "addressLocality": "Kežmarok", "addressCountry": "SK" },
-    "geo": { "@type": "GeoCoordinates", "latitude": 49.1392, "longitude": 20.4302 },
-    "areaServed": ["Prešovský kraj", "Košický kraj", "Slovensko"]
+    "@graph": [
+      {
+        "@type": ["ProfessionalService", "LocalBusiness"],
+        "@id": "https://ebdkezmarok.sk/#kancelaria",
+        "name": "E.B.D. Kežmarok",
+        "alternateName": "E.B.D. Kežmarok – environmentálna kancelária",
+        "url": "https://ebdkezmarok.sk/",
+        "logo": "https://ebdkezmarok.sk/img/favicon.svg",
+        "image": "https://ebdkezmarok.sk/img/og.png",
+        "description": "Environmentálna kancelária založená v roku 1998. Obstarávanie územnoplánovacej dokumentácie obcí, miest a regiónov podľa zákona č. 200/2022 Z. z., posudzovanie vplyvov na životné prostredie (EIA/SEA) podľa zákona č. 24/2006 Z. z., regionálne environmentálne koncepcie a konzultácie k novej legislatíve.",
+        "foundingDate": "1998",
+        "founder": { "@type": "Person", "name": "Ing. Jaroslav Lizák" },
+        "telephone": "+421903642470",
+        "address": { "@type": "PostalAddress", "addressLocality": "Ľubica", "postalCode": "059 71", "addressRegion": "Prešovský kraj", "addressCountry": "SK" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 49.1206, "longitude": 20.4483 },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Prešovský kraj" },
+          { "@type": "AdministrativeArea", "name": "Košický kraj" },
+          { "@type": "Country", "name": "Slovensko" }
+        ],
+        "identifier": { "@type": "PropertyValue", "propertyID": "IČO", "value": "34631615" },
+        "knowsAbout": ["územné plánovanie", "územný plán obce", "územný plán mikroregiónu", "zákon č. 200/2022 Z. z.", "vyhláška č. 153/2024 Z. z.", "posudzovanie vplyvov na životné prostredie", "EIA", "SEA", "zákon č. 24/2006 Z. z.", "regionálny územný systém ekologickej stability", "záväzné stanovisko obce"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Služby",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Obstarávanie územnoplánovacej dokumentácie", "description": "Územný plán obce, územný plán zóny, územný plán mikroregiónu, zmeny a doplnky, urbanistické štúdie — obstarávanie prostredníctvom odborne spôsobilej osoby podľa zákona č. 200/2022 Z. z." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Posudzovanie vplyvov na životné prostredie (EIA)", "description": "Zámer, správa o hodnotení, oznámenie o zmene činnosti, zastupovanie navrhovateľa podľa zákona č. 24/2006 Z. z." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Posudzovanie strategických dokumentov (SEA)", "description": "Oznámenie o strategickom dokumente a správa o hodnotení územných plánov, ich zmien a doplnkov a koncepcií." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Regionálne koncepcie", "description": "Územné plány regiónov, stratégie rozvoja životného prostredia okresov, regionálne územné systémy ekologickej stability (RÚSES)." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Konzultácie k novej legislatíve", "description": "Konzultácie pre obce a investorov k zákonu č. 200/2022 Z. z., stavebnému zákonu č. 25/2025 Z. z. a novele zákona o posudzovaní vplyvov. Úvodná konzultácia bez poplatku." }, "price": "0", "priceCurrency": "EUR" }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ebdkezmarok.sk/#web",
+        "url": "https://ebdkezmarok.sk/",
+        "name": "E.B.D. Kežmarok",
+        "inLanguage": "sk",
+        "publisher": { "@id": "https://ebdkezmarok.sk/#kancelaria" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ebdkezmarok.sk/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Musí naša obec obstarať nový územný plán? Dokedy?", "acceptedAnswer": { "@type": "Answer", "text": "Áno, ak bola územnoplánovacia dokumentácia obce schválená pred 1. aprílom 2024. Podľa zákona č. 200/2022 Z. z. ju treba do 31. marca 2032 nahradiť územným plánom obce alebo územným plánom mikroregiónu podľa nového zákona; 1. apríla 2032 stará dokumentácia stráca platnosť. Obce, ktoré územný plán doteraz nemali, ho musia obstarať v rovnakom termíne." } },
+          { "@type": "Question", "name": "Kto územný plán obstaráva a kto ho spracúva?", "acceptedAnswer": { "@type": "Answer", "text": "Obstarávateľom je obec, zákon však vyžaduje, aby obstarávanie viedla odborne spôsobilá osoba zapísaná v registri Úradu pre územné plánovanie a výstavbu SR. Spracovateľom je autorizovaný architekt alebo urbanista. E.B.D. Kežmarok zabezpečuje obstarávanie: vedie proces, prerokovania a komunikáciu s úradmi; s výberom spracovateľa obci pomôže." } },
+          { "@type": "Question", "name": "Koľko stojí územný plán a je naň dotácia?", "acceptedAnswer": { "@type": "Answer", "text": "Cena závisí od veľkosti obce, rozsahu riešeného územia a stupňa dokumentácie; ponuku pripravíme po konzultácii. Úrad pre územné plánovanie a výstavbu SR poskytuje obciam, mestám a krajom dotáciu až do 80 % oprávnených nákladov; výzvy vyhlasuje spravidla začiatkom roka (v roku 2026 od 15. januára do 15. februára). S prípravou žiadosti pomôžeme." } },
+          { "@type": "Question", "name": "Ako dlho trvá obstaranie územného plánu?", "acceptedAnswer": { "@type": "Answer", "text": "Spravidla jeden a pol až tri roky podľa veľkosti obce a priebehu prerokovaní. Nový zákon zrušil etapu konceptu a posúdenie SEA beží súbežne s prerokovaním návrhu, čo proces skracuje. Vzhľadom na termín 31. marca 2032 a obmedzené kapacity spracovateľov odporúčame začať najneskôr v rokoch 2027 až 2028." } },
+          { "@type": "Question", "name": "Čo je územný plán mikroregiónu?", "acceptedAnswer": { "@type": "Answer", "text": "Nový typ územnoplánovacej dokumentácie podľa zákona č. 200/2022 Z. z., ktorý spoločne obstaráva viac obcí. Pre malé obce je to spôsob, ako splniť povinnosť mať platný územný plán do roku 2032 a rozdeliť si náklady na spracovanie." } },
+          { "@type": "Question", "name": "Čo je záväzné stanovisko obce a prečo potrebuje platný územný plán?", "acceptedAnswer": { "@type": "Answer", "text": "Podľa stavebného zákona č. 25/2025 Z. z. obec ako orgán územného plánovania vydáva k stavebnému zámeru záväzné stanovisko o jeho súlade s územným plánom. Bez platnej územnoplánovacej dokumentácie nemá obec o čo súlad oprieť a jej možnosť usmerňovať výstavbu je výrazne oslabená. Novela z apríla 2025 rozšírila okruh prípadov, keď je stanovisko potrebné, napríklad o drobné stavby so zastavanou plochou nad 25 m²." } },
+          { "@type": "Question", "name": "Podlieha môj investičný zámer posudzovaniu vplyvov (EIA)?", "acceptedAnswer": { "@type": "Answer", "text": "Rozhoduje príloha č. 8 zákona č. 24/2006 Z. z.: podľa druhu činnosti a prahových hodnôt (výkon, kapacita, plocha) ide o povinné hodnotenie, zisťovacie konanie, alebo je zámer pod prahom. Posudzuje sa aj zmena existujúcej činnosti. Novela č. 269/2025 Z. z. zmenila lehoty a prepojila EIA s povoľovaním podľa nového stavebného zákona, preto zaradenie zámeru odporúčame overiť ešte pred projektovou prípravou." } },
+          { "@type": "Question", "name": "Aký je rozdiel medzi EIA a SEA?", "acceptedAnswer": { "@type": "Answer", "text": "EIA posudzuje konkrétne stavby a činnosti; výstupom je zámer a správa o hodnotení. SEA posudzuje strategické dokumenty — územné plány, ich zmeny a doplnky a koncepcie; výstupom je oznámenie o strategickom dokumente a správa o hodnotení. Každý územný plán obce a každé zmeny a doplnky podliehajú SEA, ktorá podľa nového zákona beží súbežne s prerokovaním návrhu." } },
+          { "@type": "Question", "name": "Musí byť nový územný plán digitálny?", "acceptedAnswer": { "@type": "Answer", "text": "Áno. Vyhláška č. 153/2024 Z. z. zaviedla jednotný dátový a grafický štandard: územný plán sa odovzdáva v strojovo čitateľnej podobe s jednotnou legendou cez informačný systém územného plánovania. Staršie plány nemožno len prekresliť, spracúvajú sa nanovo podľa štandardu." } },
+          { "@type": "Question", "name": "Čo sa stane, ak obec termín 31. 3. 2032 nestihne?", "acceptedAnswer": { "@type": "Answer", "text": "Stará územnoplánovacia dokumentácia 1. apríla 2032 stráca platnosť. Obec tým stráca záväzný nástroj na usmerňovanie výstavby a na ochranu svojich rozvojových plôch, verejných priestorov a krajiny, a nemá podklad pre záväzné stanoviská k stavebným zámerom." } }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
   <a href="#s01" class="skip-to-content">Preskočiť na obsah</a>
 
-  <svg style="display:none" aria-hidden="true">
+  <svg class="sprite" aria-hidden="true">
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
-    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M19 14v6H4V5h6"/></symbol>
-    <symbol id="i-logo" viewBox="0 0 32 32"><rect width="32" height="32" fill="#141414"/><path d="M6 6h20v20H6z" fill="none" stroke="#fff" stroke-width="1.5"/><path d="M6 15h20M14 6v20" stroke="#fff" stroke-width="1"/><path d="M6 21c5-6 10 2 20-4" fill="none" stroke="#0082aa" stroke-width="2"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 32 32"><rect x="1" y="1" width="30" height="30" fill="#fff"/><path d="M1 1H13L14.5 12 1 13.5Z" fill="#dcdcdc"/><path d="M13 1H31V12.5L14.5 12Z" fill="#0082aa"/><path d="M14.5 12 31 12.5V31H12Z" fill="#fff"/><path d="M1 13.5 14.5 12 12 31H1Z" fill="#82aa50"/><path d="M19 17h6v6h-6z" fill="#e69600"/><path d="M1 13.5 14.5 12 31 12.5M13 1 14.5 12 12 31" fill="none" stroke="#141414" stroke-width="1.3" stroke-linejoin="round"/><rect x="1" y="1" width="30" height="30" fill="none" stroke="#141414" stroke-width="1.6"/></symbol>
   </svg>
 
   <nav class="nav" id="nav" aria-label="Hlavná navigácia">
@@ -63,15 +125,16 @@
         <li><a href="#s03"><b>03</b>Regióny</a></li>
         <li><a href="#s04"><b>04</b>Legislatíva</a></li>
         <li><a href="#s05"><b>05</b>Referencie</a></li>
-        <li><a href="#s06"><b>06</b>Poradenstvo</a></li>
+        <li><a href="#s06"><b>06</b>Cenník</a></li>
         <li><a href="#s07"><b>07</b>Kontakt</a></li>
       </ul>
-      <a href="#s06" class="btn js-mail" data-mail="konzultacia">Konzultácia</a>
+      <a href="#s07" class="btn js-mail" data-mail="konzultacia">Konzultácia</a>
       <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Otvoriť menu">
         <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
         <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
       </button>
     </div>
+    <div class="palette" aria-hidden="true"><span class="c-byv"></span><span class="c-dop"></span><span class="c-tech"></span><span class="c-vyr"></span><span class="c-vp"></span><span class="c-agro"></span><span class="c-rek"></span><span class="c-eko"></span><span class="c-voda"></span><span class="c-teal"></span><span class="c-orange"></span><span class="c-lilac"></span></div>
   </nav>
 
   <main id="top">
@@ -85,16 +148,16 @@
             <h1 id="h1">Územné plány obcí a posudzovanie vplyvov na životné prostredie.</h1>
           </div>
           <div>
-            <p class="hero-lead">Od roku 1998 obstarávame územnoplánovaciu dokumentáciu podľa zákona č. 200/2022 Z. z. a spracúvame hodnotenia EIA a SEA podľa zákona č. 24/2006 Z. z. — pre obce, mestá, samosprávne kraje a investorov, predovšetkým v Prešovskom a Košickom kraji.</p>
+            <p class="hero-lead">E.B.D. Kežmarok je environmentálna kancelária. Od roku 1998 obstarávame územnoplánovaciu dokumentáciu podľa zákona č. 200/2022 Z. z. a spracúvame hodnotenia EIA a SEA podľa zákona č. 24/2006 Z. z. — pre obce, mestá, samosprávne kraje a investorov, predovšetkým v Prešovskom a Košickom kraji.</p>
             <div class="hero-actions">
-              <a href="#s06" class="btn js-mail" data-mail="konzultacia"><span>Dohodnúť konzultáciu</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="#s07" class="btn js-mail" data-mail="konzultacia"><span>Dohodnúť konzultáciu</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
               <a href="#s05" class="btn btn--ghost">Register referencií</a>
             </div>
             <dl class="hero-keys">
-              <div><b class="num">1998</b><dt class="visually-hidden">Založenie</dt><dd>založenie kancelárie</dd></div>
-              <div><b class="num">7</b><dt class="visually-hidden">Územné plány</dt><dd>územných plánov</dd></div>
-              <div><b class="num">22</b><dt class="visually-hidden">EIA/SEA</dt><dd>posúdení EIA / SEA</dd></div>
-              <div><b class="num">4</b><dt class="visually-hidden">Regionálne koncepcie</dt><dd>regionálne koncepcie</dd></div>
+              <div class="k--orange"><b class="num">1998</b><dt class="visually-hidden">Založenie</dt><dd>založenie kancelárie</dd></div>
+              <div class="k--byv"><b class="num">7</b><dt class="visually-hidden">Územné plány</dt><dd>územných plánov</dd></div>
+              <div class="k--vyr"><b class="num">22</b><dt class="visually-hidden">EIA/SEA</dt><dd>posúdení EIA / SEA</dd></div>
+              <div class="k--eko"><b class="num">4</b><dt class="visually-hidden">Regionálne koncepcie</dt><dd>regionálne koncepcie</dd></div>
             </dl>
           </div>
         </div>
@@ -102,7 +165,7 @@
         <div class="sheet" aria-label="Ukážka regulačného výkresu">
           <div class="sheet-body">
             <div class="sheet-drawing">
-              <svg class="vykres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="vykres-title vykres-desc">
+              <svg class="vykres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="vykres-title vykres-desc">
 <title id="vykres-title">Regulačný výkres územného plánu obce – schematická ukážka</title>
 <desc id="vykres-desc">Schéma regulačného výkresu podľa vyhlášky č. 153/2024 Z. z.: parcely, funkčné plochy v šedej škále, vodný tok, verejné priestory a hranice územia.</desc>
 <defs><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#287300" stroke-width="1"/></pattern></defs>
@@ -516,15 +579,15 @@
             <aside class="legend" aria-label="Legenda a navigácia">
               <h2>Legenda · vyberte službu</h2>
               <ol>
-                <li><a href="#s01"><span class="sw" style="background:#dcdcdc"></span><span class="legend-name">bývanie, vybavenosť</span><span class="legend-to">01 Územný plán obce →</span></a></li>
-                <li><a href="#s02"><span class="sw" style="background:#646464"></span><span class="legend-name">výroba, technické vybavenie</span><span class="legend-to">02 EIA zámeru →</span></a></li>
-                <li><a href="#s02"><span class="sw sw--line" style="--sw-c:#00aff0"></span><span class="legend-name">vodstvo, vodný tok</span><span class="legend-to">02 SEA dokumentu →</span></a></li>
-                <li><a href="#s03"><span class="sw" style="background:#82aa50"></span><span class="legend-name">ekostabilizačná vegetácia</span><span class="legend-to">03 Regióny, RÚSES →</span></a></li>
-                <li><a href="#s04"><span class="sw sw--line" style="--sw-c:#0082aa"></span><span class="legend-name">verejný priestor — os, ťažisko</span><span class="legend-to">04 Legislatíva →</span></a></li>
-                <li><a href="#s05"><span class="sw sw--line sw--dash" style="--sw-c:#828282"></span><span class="legend-name">hranica zastavaného územia</span><span class="legend-to">05 Referencie →</span></a></li>
-                <li><a href="#s07"><span class="sw sw--line sw--dash" style="--sw-c:#c9a2e8"></span><span class="legend-name">hranica obce</span><span class="legend-to">07 Kancelária →</span></a></li>
+                <li><a href="#s01"><span class="sw sw--byv"></span><span class="legend-name">bývanie, vybavenosť</span><span class="legend-to">01 Územný plán obce →</span></a></li>
+                <li><a href="#s02"><span class="sw sw--vyr"></span><span class="legend-name">výroba, technické vybavenie</span><span class="legend-to">02 EIA zámeru →</span></a></li>
+                <li><a href="#s02"><span class="sw sw--line sw--voda"></span><span class="legend-name">vodstvo, vodný tok</span><span class="legend-to">02 SEA dokumentu →</span></a></li>
+                <li><a href="#s03"><span class="sw sw--eko"></span><span class="legend-name">ekostabilizačná vegetácia</span><span class="legend-to">03 Regióny, RÚSES →</span></a></li>
+                <li><a href="#s04"><span class="sw sw--line sw--teal"></span><span class="legend-name">verejný priestor — os, ťažisko</span><span class="legend-to">04 Legislatíva →</span></a></li>
+                <li><a href="#s05"><span class="sw sw--line sw--dash sw--grey"></span><span class="legend-name">hranica zastavaného územia</span><span class="legend-to">05 Referencie →</span></a></li>
+                <li><a href="#s07"><span class="sw sw--line sw--dash sw--lilac"></span><span class="legend-name">hranica obce</span><span class="legend-to">07 Kontakt →</span></a></li>
               </ol>
-              <p class="legend-foot">Farby a čiary podľa jednotného grafického štandardu regulačného výkresu — <a href="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2024/153/" rel="noopener" target="_blank">vyhláška ÚÚPV SR č. 153/2024 Z. z.</a>, príloha č. 2. Schematická ukážka, nie konkrétna obec.</p>
+              <p class="legend-foot">Farby a čiary podľa jednotného grafického štandardu regulačného výkresu — <a href="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2024/153/" rel="noopener noreferrer" target="_blank">vyhláška ÚÚPV SR č. 153/2024 Z. z.</a>, príloha č. 2. Schematická ukážka, nie konkrétna obec.</p>
             </aside>
           </div>
           <div class="title-block">
@@ -559,7 +622,7 @@
           </div>
           <figure class="fig reveal">
             <img src="img/levoca-letecky.jpg" srcset="img/levoca-letecky-800.jpg 800w, img/levoca-letecky-1200.jpg 1200w, img/levoca-letecky.jpg 1600w" sizes="(max-width: 1080px) 100vw, 480px" alt="Šikmý letecký záber na historické jadro Levoče s hradbami, sídliskom a poľnohospodárskou krajinou" loading="lazy" width="1600" height="1067">
-            <figcaption><span><b>Obr. 01</b> — Levoča, historické jadro a hradby, šikmý letecký záber. Územný plán mesta a posúdenie SEA: E.B.D. Kežmarok.</span><span>Foto <a href="https://commons.wikimedia.org/wiki/File:068_Levoca_(Leutschau).JPG" rel="noopener" target="_blank">E. Issel</a>, CC BY-SA 3.0</span></figcaption>
+            <figcaption><span><b>Obr. 01</b> — Levoča, historické jadro a hradby, šikmý letecký záber. Územný plán mesta a posúdenie SEA: E.B.D. Kežmarok.</span><span>Foto <a href="https://commons.wikimedia.org/wiki/File:068_Levoca_(Leutschau).JPG" rel="noopener noreferrer" target="_blank">E. Issel</a>, CC BY-SA 3.0</span></figcaption>
           </figure>
         </div>
 
@@ -620,16 +683,16 @@
               <g fill="none" stroke="#141414" stroke-width="0.8">
                 <path d="M560 262 v14 M618 262 v14 M560 270 h58"/>
                 <path d="M120 84 v-14 M310 84 v-14 M120 76 h190"/>
-                              </g>
+              </g>
               <g font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#141414">
                 <text x="14" y="22" font-weight="500">REZ A–A′ · SCHÉMA BEZ MIERKY</text>
                 <text x="14" y="38" fill="#5a5a5a">EIA — posudzované vplyvy v jednom profile</text>
                 <text x="120" y="66">priemyselný park (výroba)</text>
                 <text x="470" y="292">ochranné pásmo vodného toku</text>
                 <text x="700" y="140">obytná zóna</text>
-                                <text x="14" y="206" fill="#0082aa">hladina podzemnej vody</text>
+                <text x="14" y="206" fill="#0082aa">hladina podzemnej vody</text>
                 <text x="392" y="330" fill="#9a6400">hluková izofóna</text>
-                                <text x="620" y="198">cesta III. tr.</text>
+                <text x="620" y="198">cesta III. tr.</text>
                 <text x="14" y="265" fill="#5a5a5a">štrky a piesky</text>
                 <text x="14" y="318" fill="#5a5a5a">flyš — skalné podložie</text>
                 <text x="940" y="330" text-anchor="end" fill="#8c8c8c">schéma · nie konkrétna lokalita</text>
@@ -661,14 +724,14 @@
           <div class="reveal">
             <table class="spec">
               <tr><th scope="row">Územie</th><td>Prešovský a Košický kraj — Spiš, Podtatranská kotlina, Šariš, Zemplín; podľa dohody celé Slovensko</td></tr>
-                            <tr><th scope="row">Prax</th><td>28 rokov pod troma režimami stavebného práva — zákon č. 50/1976 Zb., zákony č. 200/2022 Z. z. a 25/2025 Z. z.</td></tr>
+              <tr><th scope="row">Prax</th><td>28 rokov pod troma režimami stavebného práva — zákon č. 50/1976 Zb., zákony č. 200/2022 Z. z. a 25/2025 Z. z.</td></tr>
             </table>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= 04 LEGISLATÍVA ================= -->
+    <!-- ================= 04 LEGISLATÍVA + FAQ ================= -->
     <section class="section" id="s04" aria-labelledby="h-s04">
       <div class="wrap">
         <div class="section-head reveal">
@@ -695,7 +758,7 @@
             <span class="sn">04.1</span>
             <div>
               <h3>Zákon č. 200/2022 Z. z. o územnom plánovaní</h3>
-              <div class="law-meta"><span><b>Účinný</b> od 1. 4. 2024</span><span><b>Vykonávacie predpisy</b> vyhl. č. 392/2023, 153/2024 Z. z.</span><span class="alert"><b>Termín</b> 31. 3. 2032 (obce) · 31. 3. 2028 (kraje)</span><span><b>Stav</b> novela v príprave (MD SR, MPK 2/2026)</span></div>
+              <div class="law-meta"><span><b>Účinný</b> od 1. 4. 2024</span><span><b>Vykonávacie predpisy</b> vyhl. č. 392/2023, 153/2024 Z. z.</span><span class="alert"><b>Termín</b> 31. 3. 2032 (obce) · 31. 3. 2028 (kraje)</span><span><b>Stav</b> novela v príprave (MD SR)</span></div>
             </div>
             <ul>
               <li>Dokumentácia schválená do 31. 3. 2024 musí byť do <strong>31. 3. 2032</strong> nahradená dokumentáciou podľa nového zákona, inak stráca platnosť.</li>
@@ -717,7 +780,7 @@
               <li>Obec ako orgán územného plánovania vydáva <strong>záväzné stanovisko o súlade zámeru s územným plánom</strong>.</li>
               <li>Novela rozšírila okruh záväzných stanovísk (drobné stavby nad 25 m², vedenia elektronických komunikácií, informačné konštrukcie nad 1,2 m²); lehotu možno predĺžiť na 60 dní, inak platí fikcia súhlasu.</li>
             </ul>
-            <p class="so-what"><b>Pre obec</b>Záväzné stanovisko sa opiera výlučne o platný územný plán. Obec bez aktuálnej ÚPD nemá o čo oprieť súhlas ani nesúhlas — a lehoty s fikciou súhlasu bežia bez ohľadu na to.</p>
+            <p class="so-what"><b>Pre obec</b>Záväzné stanovisko sa opiera výlučne o platný územný plán. Obec bez aktuálnej ÚPD nemá o čo oprieť súhlas ani nesúhlas — a lehoty bežia bez ohľadu na to.</p>
           </article>
 
           <article class="law-row">
@@ -733,6 +796,50 @@
             </ul>
             <p class="so-what"><b>Pre investora a obec</b>Zaradenie zámeru podľa prílohy č. 8 si overte pred projektovou prípravou — po novele sa mení, čo ide do zisťovacieho konania a v akých lehotách. Územný plán a jeho zmeny a doplnky zostávajú strategickým dokumentom so SEA, ktorá teraz beží súbežne s prerokovaním návrhu.</p>
           </article>
+        </div>
+
+        <h3 class="sub-head reveal" id="faq">Časté otázky k novej legislatíve</h3>
+        <div class="faq reveal">
+          <details>
+            <summary>Musí naša obec obstarať nový územný plán? Dokedy?</summary>
+            <div class="answer"><p>Áno, ak bola vaša územnoplánovacia dokumentácia schválená pred 1. aprílom 2024. Podľa zákona č. 200/2022 Z. z. ju treba do <strong>31. marca 2032</strong> nahradiť územným plánom obce alebo územným plánom mikroregiónu podľa nového zákona; 1. apríla 2032 stará dokumentácia stráca platnosť. Obce, ktoré územný plán doteraz nemali, ho musia obstarať v rovnakom termíne.</p></div>
+          </details>
+          <details>
+            <summary>Kto územný plán obstaráva a kto ho spracúva?</summary>
+            <div class="answer"><p>Obstarávateľom je obec, zákon však vyžaduje, aby obstarávanie viedla <strong>odborne spôsobilá osoba</strong> zapísaná v registri Úradu pre územné plánovanie a výstavbu SR. Spracovateľom je autorizovaný architekt alebo urbanista. E.B.D. Kežmarok zabezpečuje obstarávanie: vedie proces, prerokovania a komunikáciu s úradmi; s výberom spracovateľa obci pomôžeme.</p></div>
+          </details>
+          <details>
+            <summary>Koľko stojí územný plán a je naň dotácia?</summary>
+            <div class="answer"><p>Cena závisí od veľkosti obce, rozsahu riešeného územia a stupňa dokumentácie; ponuku pripravíme po konzultácii. Úrad pre územné plánovanie a výstavbu SR poskytuje obciam, mestám a krajom <strong>dotáciu až do 80 %</strong> oprávnených nákladov; výzvy vyhlasuje spravidla začiatkom roka (v roku 2026 od 15. januára do 15. februára). S prípravou žiadosti pomôžeme.</p></div>
+          </details>
+          <details>
+            <summary>Ako dlho trvá obstaranie územného plánu?</summary>
+            <div class="answer"><p>Spravidla jeden a pol až tri roky podľa veľkosti obce a priebehu prerokovaní. Nový zákon zrušil etapu konceptu a posúdenie SEA beží súbežne s prerokovaním návrhu, čo proces skracuje. Vzhľadom na termín 31. 3. 2032 a obmedzené kapacity spracovateľov odporúčame začať <strong>najneskôr v rokoch 2027 – 2028</strong>.</p></div>
+          </details>
+          <details>
+            <summary>Čo je územný plán mikroregiónu?</summary>
+            <div class="answer"><p>Nový typ územnoplánovacej dokumentácie podľa zákona č. 200/2022 Z. z., ktorý spoločne obstaráva viac obcí. Pre malé obce je to spôsob, ako splniť povinnosť mať platný územný plán do roku 2032 a rozdeliť si náklady na spracovanie.</p></div>
+          </details>
+          <details>
+            <summary>Čo je záväzné stanovisko obce a prečo potrebuje platný územný plán?</summary>
+            <div class="answer"><p>Podľa stavebného zákona č. 25/2025 Z. z. obec ako orgán územného plánovania vydáva k stavebnému zámeru záväzné stanovisko o jeho súlade s územným plánom. Bez platnej územnoplánovacej dokumentácie nemá obec o čo súlad oprieť a jej možnosť usmerňovať výstavbu je výrazne oslabená. Novela z apríla 2025 rozšírila okruh prípadov, keď je stanovisko potrebné — napríklad o drobné stavby so zastavanou plochou nad 25 m².</p></div>
+          </details>
+          <details>
+            <summary>Podlieha môj investičný zámer posudzovaniu vplyvov (EIA)?</summary>
+            <div class="answer"><p>Rozhoduje príloha č. 8 zákona č. 24/2006 Z. z.: podľa druhu činnosti a prahových hodnôt (výkon, kapacita, plocha) ide o povinné hodnotenie, zisťovacie konanie, alebo je zámer pod prahom. Posudzuje sa aj zmena existujúcej činnosti. Novela č. 269/2025 Z. z. zmenila lehoty a prepojila EIA s povoľovaním podľa nového stavebného zákona — zaradenie zámeru preto odporúčame overiť ešte pred projektovou prípravou; pripravíme písomné stanovisko.</p></div>
+          </details>
+          <details>
+            <summary>Aký je rozdiel medzi EIA a SEA?</summary>
+            <div class="answer"><p><strong>EIA</strong> posudzuje konkrétne stavby a činnosti; výstupom je zámer a správa o hodnotení. <strong>SEA</strong> posudzuje strategické dokumenty — územné plány, ich zmeny a doplnky a koncepcie; výstupom je oznámenie o strategickom dokumente a správa o hodnotení. Každý územný plán obce a každé zmeny a doplnky podliehajú SEA, ktorá podľa nového zákona beží súbežne s prerokovaním návrhu.</p></div>
+          </details>
+          <details>
+            <summary>Musí byť nový územný plán digitálny?</summary>
+            <div class="answer"><p>Áno. Vyhláška č. 153/2024 Z. z. zaviedla jednotný dátový a grafický štandard: územný plán sa odovzdáva v strojovo čitateľnej podobe s jednotnou legendou cez informačný systém územného plánovania. Staršie plány nemožno len „prekresliť" — spracúvajú sa nanovo podľa štandardu.</p></div>
+          </details>
+          <details>
+            <summary>Čo sa stane, ak obec termín 31. 3. 2032 nestihne?</summary>
+            <div class="answer"><p>Stará územnoplánovacia dokumentácia 1. apríla 2032 stráca platnosť. Obec tým stráca záväzný nástroj na usmerňovanie výstavby a na ochranu svojich rozvojových plôch, verejných priestorov a krajiny — a nemá podklad pre záväzné stanoviská k stavebným zámerom.</p></div>
+          </details>
         </div>
       </div>
     </section>
@@ -822,7 +929,7 @@
             <div class="map-key"><span><i class="hq"></i>sídlo kancelárie</span><span><i></i>obec / mesto s referenciou</span><span><i class="area"></i>Prešovský a Košický kraj</span></div>
             <figcaption><span><b>Obr. 03</b> — Rozmiestnenie referencií. Hranice krajov a okresov: ÚGKK SR.</span></figcaption>
           </figure>
-          <table class="register reveal">
+          <table class="register reveal" id="register">
             <thead><tr><th scope="col">Obec · mesto · lokalita</th><th scope="col">Okres</th><th scope="col">Dokument</th><th scope="col">Úloha</th></tr></thead>
             <tbody>
               <tr class="group"><th colspan="4" scope="colgroup">Územnoplánovacia dokumentácia <span>07</span></th></tr>
@@ -851,50 +958,79 @@
               <tr><th scope="row">Kráľovský Chlmec — priemyselná zóna</th><td>TV</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
               <tr><th scope="row">Krompachy — hnedý priemyselný park</th><td>SN</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
               <tr><th scope="row">Krompachy — KFP Kovohuty</th><td>SN</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Krompachy — Kovohuty, výroba medeného drôtu</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Krompachy — Kovohuty, výroba anódovej medi</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Krompachy — Kovohuty, síran zinočnatý</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Veľká Lomnica — golfový areál</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Reľov — športovo-rekreačný areál Magurské sedlo</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Kežmarok — syráreň, Tatranská mliekareň</th><td>KK</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Kežmarok — kravín s dojárňou, PD</th><td>KK</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Svit — ťažba štrkopieskov Batizovce II</th><td>PP</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Trnava — výrobný závod</th><td>TT</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Bardejov — spracovanie starých vozidiel</th><td>BJ</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Levoča — ČOV a kanalizácia, Levočská dolina</th><td>LE</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Svit — predajňa potravín</th><td>PP</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Stará Ľubovňa — centrum obchodu a služieb</th><td>SL</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
-              <tr><th scope="row">Prešov-Sekčov — centrum obchodu a služieb</th><td>PO</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Krompachy — Kovohuty, výroba medeného drôtu</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Krompachy — Kovohuty, výroba anódovej medi</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Krompachy — Kovohuty, síran zinočnatý</th><td>SN</td><td><span class="tag">EIA · zmena činnosti</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Veľká Lomnica — golfový areál</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Reľov — športovo-rekreačný areál Magurské sedlo</th><td>KK</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Kežmarok — syráreň, Tatranská mliekareň</th><td>KK</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Kežmarok — kravín s dojárňou, PD</th><td>KK</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Svit — ťažba štrkopieskov Batizovce II</th><td>PP</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Trnava — výrobný závod</th><td>TT</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Bardejov — spracovanie starých vozidiel</th><td>BJ</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Levoča — ČOV a kanalizácia, Levočská dolina</th><td>LE</td><td><span class="tag">EIA</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Svit — predajňa potravín</th><td>PP</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Stará Ľubovňa — centrum obchodu a služieb</th><td>SL</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more"><th scope="row">Prešov-Sekčov — centrum obchodu a služieb</th><td>PO</td><td><span class="tag">EIA · zámer</span></td><td>spracovateľ</td></tr>
+              <tr class="more-toggle"><td colspan="4"><button type="button" aria-controls="register" aria-expanded="false">Zobraziť ďalších 14 posúdení EIA ↓</button></td></tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- ================= 06 PORADENSTVO ================= -->
+    <!-- ================= 06 CENNÍK ================= -->
     <section class="section" id="s06" aria-labelledby="h-s06">
       <div class="wrap">
         <div class="section-head reveal">
           <span class="sn">06</span>
-          <h2 id="h-s06">Poradenstvo a konzultácie k novej legislatíve</h2>
-          <p class="eyebrow">orientačný cenník</p>
+          <h2 id="h-s06">Konzultácie a cenník</h2>
+          <p class="eyebrow">poradenstvo k novej legislatíve</p>
         </div>
-        <div class="cols">
-          <div class="copy reveal">
-            <p class="lead">Starostom, obecným úradom aj investorom poskytujeme konzultácie k zákonu č. 200/2022 Z. z., k novému stavebnému zákonu a k novele zákona o posudzovaní vplyvov. Prvý rozhovor je bez poplatku; ďalšie služby podľa cenníka alebo individuálnej ponuky.</p>
-            <table class="spec price">
-              <thead><tr><th scope="col">Služba</th><th scope="col">Rozsah · forma</th><th scope="col">Cena</th></tr></thead>
-              <tbody>
-                <tr><td><strong>Úvodná konzultácia</strong></td><td>do 30 min · telefón alebo online</td><td class="num">bez poplatku</td></tr>
-                <tr><td><strong>Konzultácia k stavu územného plánu</strong><br><span class="muted">platnosť ÚPD, termíny do roku 2032, dotácia ÚÚPV SR</span></td><td>60 min · online alebo v kancelárii</td><td class="num">60 €</td></tr>
-                <tr><td><strong>Konzultácia k záväznému stanovisku obce</strong><br><span class="muted">súlad stavebného zámeru s ÚPD podľa zákona č. 25/2025 Z. z.</span></td><td>60 min · online alebo v kancelárii</td><td class="num">60 €</td></tr>
-                <tr><td><strong>Posúdenie zaradenia zámeru</strong><br><span class="muted">podlieha zámer EIA? príloha č. 8 zákona č. 24/2006 Z. z.</span></td><td>písomné stanovisko · do 5 pracovných dní</td><td class="num">od 150 €</td></tr>
-                <tr><td><strong>Príprava žiadosti o dotáciu ÚÚPV SR</strong><br><span class="muted">na spracovanie územného plánu</span></td><td>kompletizácia žiadosti a príloh</td><td class="num">od 300 €</td></tr>
-                <tr><td><strong>Audit územnoplánovacej dokumentácie obce</strong><br><span class="muted">platnosť, súlad s novým zákonom, harmonogram a odhad nákladov do roku 2032</span></td><td>písomná správa · prerokovanie so zastupiteľstvom</td><td class="num">od 400 €</td></tr>
-                <tr><td><strong>Obstarávanie ÚPD · dokumentácia EIA / SEA</strong></td><td>podľa rozsahu a stupňa dokumentácie</td><td class="num">individuálna ponuka</td></tr>
-              </tbody>
+        <div class="copy reveal">
+          <p class="lead">Starostom, obecným úradom aj investorom poskytujeme konzultácie k zákonu č. 200/2022 Z. z., k novému stavebnému zákonu a k novele zákona o posudzovaní vplyvov. Úvodný rozhovor je bez poplatku; cenu projektov určíme po osobnej konzultácii podľa ich rozsahu.</p>
+          <table class="spec price">
+            <thead><tr><th scope="col">Služba</th><th scope="col">Rozsah · forma</th><th scope="col">Cena</th></tr></thead>
+            <tbody>
+              <tr class="group"><td colspan="3">Konzultácie</td></tr>
+              <tr><td><strong>Úvodná konzultácia</strong><br><span class="muted">zorientovanie: čo sa vás z novej legislatívy týka a čo je ďalší krok</span></td><td>do 30 min · telefón alebo online</td><td class="num">bez poplatku</td></tr>
+              <tr><td><strong>Odborná konzultácia</strong><br><span class="muted">stav a platnosť územného plánu, termíny do roku 2032, dotácia ÚÚPV SR, záväzné stanovisko obce, zaradenie zámeru podľa zákona o EIA</span></td><td>60 min · online, alebo osobne u vás na úrade či v teréne</td><td class="num">60 €</td></tr>
+              <tr class="group"><td colspan="3">Projekty a dokumentácia — cena podľa rozsahu, po osobnej konzultácii</td></tr>
+              <tr><td><strong>Obstarávanie územného plánu obce alebo mikroregiónu, zmeny a doplnky</strong></td><td>podľa veľkosti obce, rozsahu územia a stupňa dokumentácie</td><td class="soft">individuálna ponuka</td></tr>
+              <tr><td><strong>Dokumentácia EIA</strong><br><span class="muted">zámer, správa o hodnotení, oznámenie o zmene činnosti, zastupovanie v konaní</span></td><td>podľa druhu a rozsahu činnosti</td><td class="soft">individuálna ponuka</td></tr>
+              <tr><td><strong>Posúdenie SEA strategického dokumentu</strong><br><span class="muted">územný plán, zmeny a doplnky, koncepcia</span></td><td>podľa rozsahu dokumentu</td><td class="soft">individuálna ponuka</td></tr>
+              <tr><td><strong>Písomné stanovisko k zaradeniu zámeru (EIA)</strong>, <strong>príprava žiadosti o dotáciu</strong>, <strong>audit územnoplánovacej dokumentácie obce</strong> s harmonogramom do roku 2032</td><td>podľa zložitosti a podkladov</td><td class="soft">individuálna ponuka</td></tr>
+            </tbody>
+          </table>
+          <p class="note">Ceny konzultácií sú konečné. Pri projektoch pripravíme ponuku po osobnej konzultácii — závisí od veľkosti obce, rozsahu dokumentácie a požadovaných termínov.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 KONTAKT ================= -->
+    <section class="section" id="s07" aria-labelledby="h-s07">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="sn">07</span>
+          <h2 id="h-s07">Kancelária a kontakt</h2>
+          <p class="eyebrow">Ľubica · okres Kežmarok</p>
+        </div>
+        <div class="office">
+          <div class="reveal">
+            <table class="spec" aria-label="Údaje o kancelárii">
+              <tr><th scope="row">Kancelária</th><td>E.B.D. Kežmarok — environmentálna kancelária, založená 1998</td></tr>
+              <tr><th scope="row">Vedie</th><td>Ing. Jaroslav Lizák</td></tr>
+              <tr><th scope="row">Sídlo</th><td>Ľubica, okres Kežmarok, Prešovský kraj<br><span class="muted">Stretnutia dohodneme u vás na úrade, v teréne alebo online.</span></td></tr>
+              <tr><th scope="row">Telefón</th><td><a href="tel:+421903642470" class="law">0903 642 470</a></td></tr>
+              <tr><th scope="row">E-mail</th><td><span class="law js-mail" data-mail="plain">ebdkezmarok [zavináč] ebdkezmarok.sk</span></td></tr>
+              <tr><th scope="row">IČO · DIČ</th><td><span class="law">34631615</span> · <span class="law">1023243331</span></td></tr>
+              <tr><th scope="row">Obstarávanie ÚPD</th><td>prostredníctvom odborne spôsobilej osoby na obstarávanie ÚPP a ÚPD</td></tr>
+              <tr><th scope="row">Pôsobnosť</th><td>Prešovský a Košický kraj; podľa dohody celé Slovensko</td></tr>
             </table>
-            <p class="office-note">Ceny sú orientačné; konečnú ponuku pripravíme podľa rozsahu a počtu obyvateľov obce alebo veľkosti zámeru. Cestovné v okresoch Kežmarok, Poprad a Levoča neúčtujeme.</p>
+            <div class="contact-actions">
+              <a href="#s07" class="btn js-mail" data-mail="dopyt"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Napísať</span></a>
+              <a href="tel:+421903642470" class="btn btn--ghost"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>0903 642 470</span></a>
+            </div>
           </div>
           <div class="reveal">
             <div class="howto">
@@ -913,62 +1049,23 @@
         </div>
       </div>
     </section>
-
-    <!-- ================= 07 KANCELÁRIA ================= -->
-    <section class="section" id="s07" aria-labelledby="h-s07">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="sn">07</span>
-          <h2 id="h-s07">Kancelária a kontakt</h2>
-          <p class="eyebrow">Starý trh 2 · Kežmarok</p>
-        </div>
-        <div class="office">
-          <div class="reveal">
-            <table class="spec" aria-label="Údaje o kancelárii">
-              <tr><th scope="row">Kancelária</th><td>E.B.D. Kežmarok — environmentálna kancelária, založená 1998</td></tr>
-              <tr><th scope="row">Vedie</th><td>Ing. Jaroslav Lizák</td></tr>
-              <tr><th scope="row">Adresa</th><td>Starý trh 2, 060 01 Kežmarok</td></tr>
-              <tr><th scope="row">Telefón</th><td><a href="tel:+421524525124" class="law">052 452 5124</a> <span class="muted">kancelária</span> · <a href="tel:+421903642470" class="law">0903 642 470</a> <span class="muted">mobil</span></td></tr>
-              <tr><th scope="row">E-mail</th><td><span class="law js-mail" data-mail="plain">ebdkezmarok [zavináč] ebdkezmarok.sk</span></td></tr>
-              <tr><th scope="row">IČO · DIČ</th><td><span class="law">34631615</span> · <span class="law">1023243331</span></td></tr>
-              <tr><th scope="row">Obstarávanie ÚPD</th><td>prostredníctvom odborne spôsobilej osoby na obstarávanie ÚPP a ÚPD</td></tr>
-              <tr><th scope="row">Pôsobnosť</th><td>Prešovský a Košický kraj; podľa dohody celé Slovensko</td></tr>
-            </table>
-            <div class="contact-actions">
-              <a href="#s06" class="btn js-mail" data-mail="dopyt"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Napísať</span></a>
-              <a href="tel:+421524525124" class="btn btn--ghost"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>052 452 5124</span></a>
-            </div>
-            <p class="office-note">Prvá konzultácia je nezáväzná: prejdeme stav vašej územnoplánovacej dokumentácie, termíny do roku 2032, možnosti dotácie alebo zaradenie vášho zámeru podľa zákona o posudzovaní vplyvov.</p>
-          </div>
-          <div class="reveal">
-            <figure class="fig">
-              <img src="img/kezmarok-hlavne-namestie.jpg" srcset="img/kezmarok-hlavne-namestie-700.jpg 700w, img/kezmarok-hlavne-namestie.jpg 1400w" sizes="(max-width: 1080px) 100vw, 480px" alt="Meštiansky dom s dreveným štítom na Hlavnom námestí č. 51 v Kežmarku" loading="lazy" width="1400" height="937">
-              <figcaption><span><b>Obr. 04</b> — Kežmarok, Hlavné námestie 51, mestská pamiatková rezervácia; kancelária je o ulicu ďalej.</span><span>Foto <a href="https://commons.wikimedia.org/wiki/File:Ke%C5%BEmarok_-_Hlavn%C3%A9_n%C3%A1m._%C4%8D._51.JPG" rel="noopener" target="_blank">P. Kunec</a>, CC BY-SA 4.0</span></figcaption>
-            </figure>
-            <div class="map-embed">
-              <iframe title="Mapa — Starý trh 2, Kežmarok" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=20.4215%2C49.1345%2C20.4395%2C49.1440&amp;layer=mapnik&amp;marker=49.1392%2C20.4302"></iframe>
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=Star%C3%BD+trh+2%2C+060+01+Ke%C5%BEmarok" rel="noopener" target="_blank">Otvoriť v Google Maps ↗</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
     <div class="wrap">
       <div class="footer-row">
-        <span>© 1998–2026 E.B.D. Kežmarok · Starý trh 2, 060 01 Kežmarok · IČO 34631615</span>
+        <span>© 1998–2026 E.B.D. Kežmarok · Ľubica, okres Kežmarok · IČO 34631615</span>
         <ul class="footer-links">
-          <li><a href="#s01">01 Územné plánovanie</a></li>
+          <li><a href="#s01">01 Územné plány</a></li>
           <li><a href="#s02">02 EIA / SEA</a></li>
           <li><a href="#s04">04 Legislatíva</a></li>
+          <li><a href="#faq">Časté otázky</a></li>
           <li><a href="#s05">05 Referencie</a></li>
-          <li><a href="#s06">06 Poradenstvo</a></li>
+          <li><a href="#s06">06 Cenník</a></li>
           <li><a href="#s07">07 Kontakt</a></li>
         </ul>
       </div>
-      <p class="footer-credits">Prehľad legislatívy má informatívny charakter a nenahrádza právne poradenstvo; stav k septembru 2026. Farebnosť schémy výkresu podľa vyhlášky ÚÚPV SR č. 153/2024 Z. z., príloha č. 2. Hranice krajov a okresov: ÚGKK SR (cez slovakia-gps-data). Fotografie z Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:068_Levoca_(Leutschau).JPG" rel="noopener" target="_blank">Levoča</a> — Ekkhard Issel, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license noopener" target="_blank">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Ke%C5%BEmarok_-_Hlavn%C3%A9_n%C3%A1m._%C4%8D._51.JPG" rel="noopener" target="_blank">Kežmarok, Hlavné námestie</a> — Patrik Kunec, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener" target="_blank">CC BY-SA 4.0</a>. Mapa: © prispievatelia <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a>.</p>
+      <p class="footer-credits">Prehľad legislatívy má informatívny charakter a nenahrádza právne poradenstvo; stav k septembru 2026. Farebnosť schémy výkresu a loga podľa vyhlášky ÚÚPV SR č. 153/2024 Z. z., príloha č. 2. Hranice krajov a okresov: ÚGKK SR. Fotografia: <a href="https://commons.wikimedia.org/wiki/File:068_Levoca_(Leutschau).JPG" rel="noopener noreferrer" target="_blank">Levoča</a> — Ekkhard Issel, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license noopener noreferrer" target="_blank">CC BY-SA 3.0</a>. Písma IBM Plex Sans a IBM Plex Mono (SIL Open Font License) sú hostované na tejto doméne — stránka nenačítava nič z cudzích serverov.</p>
     </div>
   </footer>
 
