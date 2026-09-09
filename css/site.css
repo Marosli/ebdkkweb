@@ -263,15 +263,16 @@ strong {
 
 .nav-links {
   display: flex;
-  gap: 26px;
+  gap: 22px;
 }
 
 .nav-links a {
   display: inline-flex;
   align-items: baseline;
-  gap: 7px;
+  gap: 6px;
   padding: 6px 0;
-  font-size: 14px;
+  font-size: 13.5px;
+  white-space: nowrap;
   font-weight: 500;
   color: var(--text-2);
   border-bottom: 2px solid transparent;
@@ -1320,6 +1321,16 @@ strong {
 }
 
 /* ---- responsive -------------------------------------------------- */
+@media (max-width: 1180px) {
+  .nav-links a b {
+    display: none;
+  }
+
+  .nav-inner {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 1080px) {
   .hero-top {
     grid-template-columns: 1fr;
